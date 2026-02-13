@@ -24,5 +24,6 @@ To grow my skills, share progress openly, and eventually help clients in India a
 📫 **Connect with me:**
 - [LinkedIn](www.linkedin.com/in/priyanshsonis)
 - [Portfolio Website](https://financejourneypriyansh.github.io)  
+- [Portfolio Website](https://www.upwork.com/freelancers/~0157678788f709c45e)
 
 ---
