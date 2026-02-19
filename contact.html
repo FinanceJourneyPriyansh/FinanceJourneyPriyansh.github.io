@@ -20,34 +20,30 @@
 </nav>
   </header>
 
-  <!-- Contact Section -->
-  <section>
-    <h2>📬 Contact Me</h2>
-    <p>
-      Interested in working together? Fill out the form below or connect with me
-      directly on LinkedIn and email.
-    </p>
+  <main>
+  <section class="contact-section">
+    <div class="contact-card">
+      <h2>Contact Me</h2>
+      <p>
+        Interested in working together? Fill out the form below or connect with me directly on LinkedIn and email.
+      </p>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your full name" />
 
-    <!-- Contact Form -->
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Your full name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your email address" />
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Your email address" required />
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Your message..."></textarea>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-
-    <!-- Direct Links -->
-    <div style="margin-top:20px;">
-      <button onclick="window.open('mailto:yourname@example.com','_blank')">Email Me</button>
-      <button onclick="window.open('https://www.linkedin.com/in/yourprofile','_blank')">Connect on LinkedIn</button>
+        <button type="submit">Send Message</button>
+        <button type="button">Email Me</button>
+        <button type="button">Connect on LinkedIn</button>
+      </form>
     </div>
   </section>
+</main>
 
   <!-- Footer -->
   <footer>
