@@ -7,8 +7,8 @@
 }
 
 body {
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: #f1f5f9;
+  background: #fdfdf6; /* Creamy white background */
+  color: #1e3a8a; /* Deep blue text */
   line-height: 1.6;
   padding: 20px;
 }
@@ -22,13 +22,13 @@ header {
 header h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #10b981; /* Emerald accent */
+  color: #1e40af; /* Strong blue accent */
 }
 
 header h2 {
   font-size: 1.2rem;
   font-weight: 400;
-  color: #94a3b8;
+  color: #3b82f6; /* Lighter blue */
   margin-top: 8px;
 }
 
@@ -40,13 +40,13 @@ nav {
 nav a {
   margin: 0 12px;
   text-decoration: none;
-  color: #f1f5f9;
+  color: #1e3a8a;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #10b981;
+  color: #2563eb; /* Hover blue */
 }
 
 /* Sections */
@@ -55,17 +55,17 @@ section {
 }
 
 /* Card */
-.card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+.card, .contact-card {
+  background: #ffffff; /* White card */
+  border: 1px solid #e5e7eb;
   border-radius: 12px;
   padding: 20px;
   margin: 20px auto;
-  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
 }
 
-.card:hover {
+.card:hover, .contact-card:hover {
   transform: translateY(-4px);
 }
 
@@ -89,8 +89,8 @@ section {
 }
 
 /* Buttons */
-button {
-  background: #10b981;
+button, form button {
+  background: #2563eb; /* Blue accent */
   color: #fff;
   border: none;
   padding: 10px 18px;
@@ -98,11 +98,12 @@ button {
   margin: 10px 8px 0 0;
   cursor: pointer;
   font-weight: 600;
+  font-size: 1rem;
   transition: background 0.3s ease;
 }
 
-button:hover {
-  background: #059669;
+button:hover, form button:hover {
+  background: #1e40af;
 }
 
 /* Footer */
@@ -110,7 +111,7 @@ footer {
   text-align: center;
   margin-top: 40px;
   font-size: 0.9rem;
-  color: #94a3b8;
+  color: #1e3a8a;
 }
 
 /* Contact Page Styling */
@@ -120,29 +121,16 @@ footer {
   padding: 30px;
 }
 
-.contact-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 12px;
-  padding: 30px;
-  backdrop-filter: blur(12px);
-  transition: transform 0.3s ease;
-}
-
-.contact-card:hover {
-  transform: translateY(-4px);
-}
-
 .contact-section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #10b981; /* Emerald accent */
+  color: #1e40af;
 }
 
 .contact-section p {
   font-size: 1.1rem;
   margin-bottom: 20px;
-  color: #f1f5f9;
+  color: #1e3a8a;
 }
 
 /* Form Fields */
@@ -150,7 +138,7 @@ form label {
   display: block;
   margin-bottom: 8px;
   font-weight: 600;
-  color: #f1f5f9;
+  color: #1e3a8a;
 }
 
 form input,
@@ -159,31 +147,13 @@ form textarea {
   padding: 12px;
   margin-bottom: 20px;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.05);
-  color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #1e3a8a;
   font-size: 1rem;
 }
 
 form textarea {
   min-height: 120px;
   resize: vertical;
-}
-
-/* Buttons */
-form button {
-  background: #10b981;
-  color: #fff;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  margin-right: 10px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: background 0.3s ease;
-}
-
-form button:hover {
-  background: #059669;
 }
