@@ -1,89 +1,106 @@
+/* Import modern fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
 /* General page styling */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   background: #F9FAFB;
-  color: #1E3A8A;
+  color: #1E2A47; /* Slate Blue */
   line-height: 1.6;
 }
 
 /* Header */
 header {
-  background: linear-gradient(90deg, #1E3A8A, #10B981);
+  background: rgba(10, 31, 68, 0.85); /* Deep Navy with transparency */
+  backdrop-filter: blur(12px);
   color: white;
   padding: 40px;
   text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 header h1 {
   margin: 0;
-  font-size: 40px;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
 }
 
 header h2 {
   margin: 5px 0;
+  font-weight: 400;
 }
 
+/* Navigation */
 nav a {
   color: white;
-  margin: 0 10px;
+  margin: 0 12px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #2ECC71; /* Emerald accent */
 }
 
 /* Sections */
 section {
-  padding: 40px;
-  max-width: 900px;
+  padding: 50px 20px;
+  max-width: 1000px;
   margin: auto;
 }
 
-/* Blog articles */
-article {
-  background: #E5E7EB;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 6px;
+/* Glassmorphism cards */
+.card, article, form {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, article:hover, form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
 /* Forms (Contact page) */
-form {
-  background: #E5E7EB;
-  padding: 20px;
-  border-radius: 6px;
-}
-
 input, textarea {
   width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 4px;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 6px;
   border: 1px solid #ccc;
+  font-family: 'Inter', sans-serif;
 }
 
 button {
-  background: #10B981;
+  background: #2ECC71; /* Emerald */
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-  background: #059669;
+  background: #27AE60;
+  transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-  background: #1E3A8A;
+  background: rgba(10, 31, 68, 0.95); /* Deep Navy */
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  padding: 25px;
+  margin-top: 50px;
+  font-size: 14px;
 }
