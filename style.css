@@ -1,3 +1,7 @@
+body {
+  background: #fdfdf6 !important; /* Creamy white */
+  color: #1e3a8a !important;      /* Blue text */
+}
 /* Global Reset */
 * {
   margin: 0;
