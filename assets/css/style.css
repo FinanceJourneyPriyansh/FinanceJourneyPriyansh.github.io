@@ -344,19 +344,17 @@ details[open] summary::after{
    SKILLS / TAGS
 ========================= */
 
-.experience-tags{
-  margin-top:28px;
-  display:grid;
-  grid-template-columns:1fr;
-  gap:14px;
+.experience-tags {
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap; /* Allows tags to wrap to the next line */
+    gap: 10px;
 }
 
-.experience-tags span{
-  display:block;
-  width:100%;
-  color:#c4c4c4;
-  font-size:15px;
-  padding-left:14px;
-  border-left:2px solid #444;
-  line-height:1.7;
+.experience-tags span {
+    display: inline-block;
+    width: auto; /* Overrides the 100% width */
+    padding: 5px 15px;
+    border: 1px solid #444; /* Full border often looks better for tags */
+    border-radius: 20px;
 }
