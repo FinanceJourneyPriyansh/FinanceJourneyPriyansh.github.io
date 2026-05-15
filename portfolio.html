@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Gallery | Priyansh Soni</title>
+    <title>Work Portfolio | Priyansh Soni</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        /* Smooth scrolling for anchor links */
+        html { scroll-behavior: smooth; }
+        .portfolio-section { padding: 80px 10%; border-bottom: 1px solid var(--border); }
+        .portfolio-section:last-child { border-bottom: none; }
+        .project-header { margin-bottom: 2rem; }
+        .project-meta { display: flex; gap: 10px; margin-bottom: 1rem; }
+    </style>
 </head>
 <body>
 
@@ -18,72 +26,83 @@
         </div>
     </nav>
 
-    <section>
-        <span class="tag">Project Gallery</span>
-        <h1 style="font-size: 3rem; margin-bottom: 1rem;">Technical Work Samples</h1>
-        <p style="color: var(--text-dim); max-width: 700px; margin-bottom: 3rem;">
-            Evidence-based financial analysis. Here you can find the raw logic, dashboards, and reports behind my professional experience.
-        </p>
-
-        <div class="grid">
-            <div class="card">
-    <div style="background: #0f172a; height: 180px; border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border);">
-        <i class="fas fa-chart-line fa-4x" style="color: #38bdf8;"></i>
-    </div>
-    <h3>Eaglewood Food Index</h3>
-    <p style="color: var(--text-dim); font-size: 0.9rem;">Proprietary index tracking retail inflation and supply chain volatility across 21 Indian metros.</p>
-    <div style="margin-top: 15px;">
-        <span class="tag">Macro</span> <span class="tag">Econometrics</span>
-    </div>
-    <a href="india-urban-food-index-april26.pdf" target="_blank" class="btn-secondary" style="margin-top: 20px; width: 100%; text-align: center;">View Index Report</a>
-</div>
-
-            
-            <div class="card">
-                <div style="background: #0f172a; height: 180px; border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border);">
-                    <i class="fas fa-file-excel fa-4x" style="color: #217346;"></i>
-                </div>
-                <h3>Tata Motors DCF Model</h3>
-                <p style="color: var(--text-dim); font-size: 0.9rem;">Integrated 3-statement model with scenario toggles for JLR domestic and EV segments.</p>
-                <div style="margin-top: 15px;">
-                    <span class="tag">Excel</span> <span class="tag">Valuation</span>
-                </div>
-                <a href="index.html#projects" class="btn-secondary" style="margin-top: 20px; width: 100%; text-align: center;">View Project Details</a>
+    <section id="research" class="portfolio-section">
+        <div class="project-header">
+            <span class="tag">Macro-Economic Research</span>
+            <h1>Eaglewood India Urban Food Index</h1>
+            <p style="color: var(--text-dim); max-width: 800px;">
+                Fortnightly deep-dive into urban inflation trends. This report analyzes the "Trifecta" of risks—Monsoon, Geopolitics, and Input Costs—affecting 21 Indian metros.
+            </p>
+        </div>
+        
+        <div class="card" style="display: flex; gap: 30px; align-items: center; background: rgba(56, 189, 248, 0.02);">
+            <div style="flex: 1;">
+                <h3>Key Analytical Pillars:</h3>
+                <ul style="color: var(--text-dim); line-height: 1.8;">
+                    <li><strong>Supply Fundamentals:</strong> Tracking reservoir levels and Rabi output.</li>
+                    <li><strong>External Risks:</strong> Linking Strait of Hormuz disruptions to urea costs.</li>
+                    <li><strong>Data Sourcing:</strong> Proprietary "Blinkit-app" price aggregation model.</li>
+                </ul>
+                <a href="india-urban-food-index-april26.pdf.pdf" target="_blank" class="btn-primary" style="margin-top: 20px;">View April 23rd Report (PDF)</a>
             </div>
-
-            <div class="card">
-                <div style="background: #0f172a; height: 180px; border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border);">
-                    <i class="fas fa-file-powerpoint fa-4x" style="color: #d24726;"></i>
-                </div>
-                <h3>Banking Strategy Analysis</h3>
-                <p style="color: var(--text-dim); font-size: 0.9rem;">Strategic comparison of retail operations vs. high-level corporate finance structures.</p>
-                <div style="margin-top: 15px;">
-                    <span class="tag">Case Study</span> <span class="tag">Strategy</span>
-                </div>
-                <a href="Everyday%20Banking%20vs%20Big%20Picture%20Finance.pdf" target="_blank" class="btn-secondary" style="margin-top: 20px; width: 100%; text-align: center;">View Analysis PDF</a>
-            </div>
-
-            <div class="card">
-                <div style="background: #0f172a; height: 180px; border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border);">
-                    <i class="fas fa-code fa-4x" style="color: var(--accent);"></i>
-                </div>
-                <h3>NLP Sentiment Engine</h3>
-                <p style="color: var(--text-dim); font-size: 0.9rem;">Python-based tool for systematic BUY/SELL signals via financial news attribution.</p>
-                <div style="margin-top: 15px;">
-                    <span class="tag">Python</span> <span class="tag">FinTech</span>
-                </div>
-                <a href="https://github.com/FinanceJourneyPriyansh" target="_blank" class="btn-secondary" style="margin-top: 20px; width: 100%; text-align: center;">View Repository</a>
+            <div style="flex: 0.5; text-align: center;">
+                <i class="fas fa-chart-line fa-6x" style="color: #38bdf8; opacity: 0.8;"></i>
             </div>
         </div>
     </section>
 
-    <section id="cta-mini" style="text-align: center; background: rgba(56, 189, 248, 0.05); padding: 50px 10%; border-radius: 20px; margin: 0 10% 50px 10%;">
-        <h3>Review My Qualifications</h3>
-        <p style="color: var(--text-dim); margin: 10px 0 25px 0;">Looking for my professional background and CA articleship details?</p>
-        <a href="Priyansh_Soni_Finance_CV.pdf" download class="btn-primary">Download Updated CV</a>
+    <section id="valuation" class="portfolio-section">
+        <div class="project-header">
+            <span class="tag">Equity Research</span>
+            <h1>Tata Motors DCF Valuation</h1>
+            <p style="color: var(--text-dim); max-width: 800px;">
+                Integrated 3-statement financial model with segment-level revenue assumptions across JLR and domestic business units.
+            </p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Valuation Approach</h3>
+                <p style="color: var(--text-dim);">Utilized DCF and EV/EBITDA comps to arrive at an intrinsic value range, factoring in EV segment growth and margin expansion.</p>
+                <a href="index.html#projects" class="btn-secondary" style="margin-top: 15px;">View Model Details</a>
+            </div>
+            <div class="card" style="border-left: 4px solid #38bdf8;">
+                <h3>Skills Demonstrated</h3>
+                <div class="project-meta">
+                    <span class="tag">Excel VBA</span>
+                    <span class="tag">Financial Modeling</span>
+                    <span class="tag">Scenario Analysis</span>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
+    <section id="banking" class="portfolio-section">
+        <div class="project-header">
+            <span class="tag">Case Study</span>
+            <h1>Everyday Banking vs. Big Picture Finance</h1>
+            <p style="color: var(--text-dim); max-width: 800px;">
+                Strategic comparison of retail banking operations vs. high-level corporate finance and institutional structures.
+            </p>
+        </div>
+        
+        <div class="card" style="background: #0f172a; border: 1px solid var(--border);">
+            <h3>Document Preview</h3>
+            <p style="color: var(--text-dim); margin-bottom: 20px;">Analysis of the transition from day-to-day operations to strategic financial advisory.</p>
+            <a href="Everyday%20Banking%20vs%20Big%20Picture%20Finance.pdf" target="_blank" class="btn-primary">Open Case Study PDF</a>
+        </div>
+    </section>
+
+    <section id="fintech" class="portfolio-section">
+        <div class="project-header">
+            <span class="tag">InvestTech</span>
+            <h1>NLP Sentiment Engine</h1>
+            <p style="color: var(--text-dim);">Python-based tool processing 100+ financial news articles to score market sentiment.</p>
+            <a href="https://github.com/FinanceJourneyPriyansh" target="_blank" class="btn-secondary" style="margin-top: 10px;">View Python Repository</a>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px;">
         <p>&copy; 2026 Priyansh Soni | Finance Portfolio</p>
     </footer>
 
