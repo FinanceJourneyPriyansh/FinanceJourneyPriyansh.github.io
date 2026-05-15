@@ -1,85 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Priyansh Finance</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Gallery | Priyansh Soni</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </head>
 <body>
-  <!-- Header / Navigation -->
-  <header>
-    <h1>Priyansh Finance</h1>
-    <h2>Selected Projects</h2>
+
     <nav>
-  <a href="index.html">Home</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="expertise.html">Expertise</a>
-  <a href="contact.html">Contact</a>
-  <a href="blog.html">Blog</a>
-</nav>
-  </header>
+        <div class="logo">PRIYANSH <span style="color: var(--accent);">SONI</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="expertise.html">Expertise</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 
-  <!-- Portfolio Section -->
-  <section>
-  <h2>📁 Featured Case Studies</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>SaaS Financial Model</h3>
-      <p><strong>Tags:</strong> Excel, SaaS, Forecasting</p>
-      <p>
-        Comprehensive 5-year projection model for a B2B SaaS startup including
-        MRR waterfall, cohort analysis, and burn rate calculation.
-      </p>
-      <button>View Project</button>
-    </div>
+    <section>
+        <span class="tag">Project Gallery</span>
+        <h1 style="font-size: 3rem; margin-bottom: 1rem;">Technical Work Samples</h1>
+        <p style="color: var(--text-dim); max-width: 700px; margin-bottom: 3rem;">
+            Evidence-based financial analysis. Here you can find the raw logic, dashboards, and reports behind my professional experience.
+        </p>
 
-    <div class="card">
-      <h3>E-commerce Valuation</h3>
-      <p><strong>Tags:</strong> Valuation, DCF, Retail</p>
-      <p>
-        DCF valuation for a D2C brand seeking Series A funding. Includes sensitivity
-        analysis on CAC and LTV.
-      </p>
-      <button>View Project</button>
-    </div>
+        <div class="grid">
+            <div class="card">
+                <div style="background: #0f172a; height: 180px; border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border);">
+                    <i class="fas fa-file-excel fa-4x" style="color: #217346;"></i>
+                </div>
+                <h3>Tata Motors DCF Model</h3>
+                <p style="color: var(--text-dim); font-size: 0.9rem;">Integrated 3-statement model with scenario toggles for JLR domestic and EV segments.</p>
+                <div style="margin-top: 15px;">
+                    <span class="tag">Excel</span> <span class="tag">Valuation</span>
+                </div>
+                <a href="#" class="btn-secondary" style="margin-top: 20px; width: 100%; text-align: center;">Explore Model</a>
+            </div>
 
-    <div class="card">
-      <h3>Budget vs Actual Dashboard</h3>
-      <p><strong>Tags:</strong> FP&A, Dashboard, Reporting</p>
-      <p>
-        Automated monthly reporting tool comparing budgeted figures against actuals
-        with variance highlighting.
-      </p>
-      <button>View Project</button>
-    </div>
+            <div class="card">
+                <div style="background: #0f172a; height: 180px; border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border);">
+                    <i class="fas fa-terminal fa-4x" style="color: var(--accent);"></i>
+                </div>
+                <h3>NLP Sentiment Dashboard</h3>
+                <p style="color: var(--text-dim); font-size: 0.9rem;">Python-Streamlit app visualizing real-time sentiment scores for Nifty 50 news feeds.</p>
+                <div style="margin-top: 15px;">
+                    <span class="tag">Python</span> <span class="tag">FinTech</span>
+                </div>
+                <a href="https://github.com/FinanceJourneyPriyansh" class="btn-secondary" style="margin-top: 20px; width: 100%; text-align: center;">View Repository</a>
+            </div>
 
-    <div class="card">
-      <h3>Real Estate Investment Analysis</h3>
-      <p><strong>Tags:</strong> Real Estate, Investment, ROI</p>
-      <p>
-        ROI calculator for commercial property investment including IRR, NPV,
-        and cash-on-cash return metrics.
-      </p>
-      <button>View Project</button>
-    </div>
+            <div class="card">
+                <div style="background: #0f172a; height: 180px; border-radius: 8px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border);">
+                    <i class="fas fa-university fa-4x" style="color: #f59e0b;"></i>
+                </div>
+                <h3>PSU Bank Audit Framework</h3>
+                <p style="color: var(--text-dim); font-size: 0.9rem;">Methodology used for NPA classification and provisioning review for ₹1500Cr+ portfolios.</p>
+                <div style="margin-top: 15px;">
+                    <span class="tag">Audit</span> <span class="tag">Compliance</span>
+                </div>
+                <a href="expertise.html" class="btn-secondary" style="margin-top: 20px; width: 100%; text-align: center;">View Methodology</a>
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
-  <h3>Case Study 1: Everyday Banking vs Big Finance</h3>
-  <p>
-    A skill-focused case study comparing everyday banking with big-picture finance.
-    Highlights career paths, required skills, and real-world examples.
-  </p>
-  <a href="Everyday%20Banking%20vs%20Big%20picture%20Finance-%20%23Case%20Study%201.pptx" target="_blank">
-    <button type="button">View Case Study</button>
-  </a>
-</div>
-  </div>
-</section>
+    <section id="cta-mini" style="text-align: center; background: rgba(56, 189, 248, 0.05); padding: 50px 10%; border-radius: 20px; margin: 0 10% 50px 10%;">
+        <h3>Need a custom financial solution?</h3>
+        <p style="color: var(--text-dim); margin: 10px 0 25px 0;">I specialize in building bespoke models and automated reporting tools.</p>
+        <a href="contact.html" class="btn-primary">Start a Discussion</a>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Priyansh Finance | Made with GitHub Pages</p>
-  </footer>
+    <footer>
+        <p>&copy; 2026 Priyansh Soni | Professional Finance Portfolio</p>
+    </footer>
+
 </body>
 </html>
