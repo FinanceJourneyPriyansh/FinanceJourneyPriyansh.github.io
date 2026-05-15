@@ -311,6 +311,7 @@ details[open] summary::after{
 
 .experience-details{
   margin-top:22px;
+  margin-bottom:40px;
 }
 
 .experience-details p{
@@ -332,4 +333,8 @@ details[open] summary::after{
   font-size:15px;
   border-left:2px solid #444;
   padding-left:14px;
+}
+
+details[open]{
+  padding-bottom:20px;
 }
