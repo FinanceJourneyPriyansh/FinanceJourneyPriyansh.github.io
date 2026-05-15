@@ -28,20 +28,19 @@ body {
     overflow-x: hidden;
 }
 
-/* --- Navigation --- */
+/* --- Fixed Navigation Fix --- */
 nav {
     position: fixed;
     top: 0;
     width: 100%;
-    height: var(--nav-height);
-    background: rgba(15, 23, 42, 0.9);
-    backdrop-filter: blur(10px);
+    height: 80px; /* Define a set height */
+    background: #0f172a; /* Solid background so text doesn't bleed through */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
-    border-bottom: 1px solid var(--border);
-    z-index: 1000;
+    border-bottom: 1px solid #334155;
+    z-index: 1000; /* Keeps it on top of everything */
 }
 
 .logo {
@@ -63,13 +62,19 @@ nav {
     color: var(--accent);
 }
 
-/* --- Section Layout --- */
+/* --- Section Spacing Fix --- */
 section {
-    padding: 120px 10% 80px;
+    /* This padding-top MUST be equal to or greater than nav height */
+    padding: 120px 10% 80px; 
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* Add this to ensure the Hero text is visible */
+#home {
+    padding-top: 150px; 
 }
 
 h2 {
