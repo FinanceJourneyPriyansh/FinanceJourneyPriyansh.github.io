@@ -1,58 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Priyansh Finance</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyansh Soni | Investment Banking & CA Finalist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </head>
 <body>
-  <!-- Header / Navigation -->
-  <header>
-    <h1>Priyansh Finance</h1>
-    <h2>Financial Clarity for Complex Decisions</h2>
+
     <nav>
-  <a href="index.html">Home</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="expertise.html">Expertise</a>
-  <a href="contact.html">Contact</a>
-  <a href="blog.html">Blog</a>
-</nav>
-  </header>
+        <div class="logo">PRIYANSH <span style="color: var(--accent-blue);">SONI</span></div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-  <!-- Hero Section -->
-  <section class="card">
-    <h2>Open to New Projects</h2>
-    <p>
-      I help businesses and startups with robust Financial Modeling, FP&A Dashboards,
-      and Valuation Case Studies. Based in Ujjain, India, serving clients globally.
-    </p>
-    <button onclick="location.href='portfolio.html'">View Portfolio</button>
-    <button onclick="window.open('https://www.upwork.com/freelancers/~0157678788f709c45e','_blank')">
-      Hire on Upwork
-    </button>
-  </section>
+    <section id="home">
+        <div class="hero-content">
+            <h1>Investment Banking Analyst <br>& CA Finalist</h1>
+            <p>Specializing in 3-Statement Financial Modeling, NLP-driven Sentiment Analysis, and Statutory Audit. Currently building InvestTech solutions at Zetheta Algorithms.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="https://www.linkedin.com/in/priyanshsonis/" target="_blank" class="btn-secondary">LinkedIn Profile</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- Expertise Grid -->
-  <section>
-    <h2>Core Expertise</h2>
-    <div class="card">
-      <h3>📊 Financial Modeling</h3>
-      <p>Dynamic 3-statement models, DCF valuations, and scenario planning.</p>
-    </div>
-    <div class="card">
-      <h3>📈 FP&A Dashboards</h3>
-      <p>Interactive dashboards in Excel & Power BI for KPI tracking and forecasting.</p>
-    </div>
-    <div class="card">
-      <h3>💡 Startup Valuation</h3>
-      <p>Pre-money and post-money valuation, cap table management, unit economics.</p>
-    </div>
-  </section>
+    <section id="experience">
+        <h2>Professional Journey</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="tag">Active</span>
+                <h3>IB Analyst</h3>
+                <p><strong>Zetheta Algorithms</strong></p>
+                <ul>
+                    <li>Built NLP pipelines for financial news sentiment scoring.</li>
+                    <li>Designed Streamlit dashboards for real-time portfolio tracking.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <span class="tag">2025</span>
+                <h3>Equity Research</h3>
+                <p><strong>Finsckool</strong></p>
+                <ul>
+                    <li>Modelled Tata Motors end-to-end (JLR & Domestic).</li>
+                    <li>Performed DCF and EV/EBITDA relative valuations.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <span class="tag">Articleship</span>
+                <h3>CA Article Assistant</h3>
+                <p><strong>Shrimal Bansal & Co.</strong></p>
+                <ul>
+                    <li>Led PSU Bank audits for portfolios up to ₹1500 Cr.</li>
+                    <li>Managed 20+ engagements across Retail & Manufacturing.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Priyansh Finance | Made with GitHub Pages</p>
-  </footer>
+    <section id="projects">
+        <h2>Featured Work & Proof</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-chart-pie fa-2x" style="color: var(--accent-blue)"></i>
+                <h3>M&A Deal Simulation</h3>
+                <p>Created a full Confidential Information Memorandum (CIM) and integrated valuation models for a simulated IPO target.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-code fa-2x" style="color: var(--accent-blue)"></i>
+                <h3>NLP Sentiment Pipeline</h3>
+                <p>Python tool processing 100+ articles to generate BUY/SELL signals based on market sentiment attribution.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-globe fa-2x" style="color: var(--accent-blue)"></i>
+                <h3>Macro Economic Research</h3>
+                <p>10-page report analyzing GDP contribution and industrial cluster growth across Indian states.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Expertise & Badges</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Financial Skills</h3>
+                <p>DCF & LBO Modeling • Statutory Audit • Tax Compliance • Scenario & Sensitivity Analysis</p>
+            </div>
+            <div class="card">
+                <h3>Certifications</h3>
+                <p>Citi IB Simulation • EY FAAS • Standard Chartered Credit Analyst • BofA IB Simulation</p>
+            </div>
+            <div class="card">
+                <h3>Tech Stack</h3>
+                <p>Advanced Excel (VBA) • Python (Pandas/NLP) • Power BI • Streamlit • SQL</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+            <h2>Let's Connect</h2>
+            <p>I am currently open to full-time roles in Investment Banking, Equity Research, and FP&A.</p>
+            <p style="margin: 20px 0; font-size: 1.2rem; color: var(--accent-blue);">priyanshsonis999@gmail.com</p>
+            <a href="https://www.upwork.com/freelancers/~0157678788f709c45e" class="btn-primary">Hire on Upwork</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Priyansh Soni | Portfolio Live from Ujjain, India</p>
+    </footer>
+
 </body>
 </html>
