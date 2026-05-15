@@ -3,43 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Portfolio | Priyansh Soni</title>
+    <title>Project Details | Priyansh Soni</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <style>
-        /* Forces smooth scrolling for anchor links */
-        html { scroll-behavior: smooth; }
-        
-        /* Creates distinct, large sections for each project */
-        .portfolio-page-section { 
-            padding: 100px 10%; 
-            border-bottom: 1px solid var(--border);
-            min-height: 60vh;
+        .isolated-project {
+            min-height: 100vh;
+            padding: 120px 10%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-        }
-        
-        .portfolio-page-section:nth-child(even) {
-            background: rgba(56, 189, 248, 0.02);
-        }
-
-        .project-details {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin-top: 30px;
-        }
-
-        .project-info-list {
-            list-style: none;
-            color: var(--text-dim);
-            line-height: 1.8;
-        }
-
-        .project-info-list li i {
-            color: #38bdf8;
-            margin-right: 10px;
+            border-bottom: 5px solid #38bdf8;
         }
     </style>
 </head>
@@ -47,89 +20,43 @@
 
     <nav>
         <div class="logo">PRIYANSH <span style="color: #38bdf8;">SONI</span></div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="expertise.html">Expertise</a>
-            <a href="contact.html">Contact</a>
-        </div>
+        <div class="nav-links"><a href="index.html">← Back Home</a></div>
     </nav>
 
-    <section id="valuation" class="portfolio-page-section">
-        <span class="tag">Equity Research</span>
-        <h1 style="font-size: 3rem; margin-bottom: 10px;">Tata Motors DCF Valuation</h1>
-        <p style="color: var(--text-dim); font-size: 1.2rem;">Full 3-statement integrated financial model for JLR and Domestic segments.</p>
-
-        <div class="project-details">
-            <div class="card">
-                <h3>Technical Summary</h3>
-                <ul class="project-info-list">
-                    <li><i class="fas fa-check"></i> 5-Year Projections for P&L, BS, and CFS.</li>
-                    <li><i class="fas fa-check"></i> WACC calculation with dynamic Beta adjustments.</li>
-                    <li><i class="fas fa-check"></i> Scenario toggles for Bull/Base/Bear cases.</li>
-                </ul>
-            </div>
-            <div class="card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-                <p style="margin-bottom: 20px;">Download the Excel model to view the underlying formulas and logic.</p>
-                <a href="index.html#projects" class="btn-primary">Request Excel Access</a>
-            </div>
+    <section id="tata-motors" class="isolated-project">
+        <h1>Tata Motors: Integrated Valuation</h1>
+        <div class="card">
+            <h3>The Build:</h3>
+            <p>Constructed a 3-statement model including JLR domestic and EV segment projections.</p>
+            <p><strong>Learned:</strong> How to normalize cash flows and calculate dynamic WACC.</p>
         </div>
     </section>
 
-    <section id="research" class="portfolio-page-section">
-        <span class="tag">Macro-Economic Research</span>
-        <h1 style="font-size: 3rem; margin-bottom: 10px;">India Urban Food Index</h1>
-        <p style="color: var(--text-dim); font-size: 1.2rem;">Proprietary index tracking inflation across 21 major Indian metros.</p>
-
-        <div class="project-details">
-            <div class="card">
-                <h3>Report Insights (April 2026)</h3>
-                <p style="color: var(--text-dim); margin-bottom: 15px;">Analysis of the "Trifecta" risks: Monsoon forecasts, West Asia conflict, and Fertilizer supply disruptions.</p>
-                <ul class="project-info-list">
-                    <li><i class="fas fa-microchip"></i> Data sourced via real-time Blinkit API aggregation.</li>
-                    <li><i class="fas fa-globe"></i> Correlating Strait of Hormuz closure to Urea costs.</li>
-                </ul>
-            </div>
-            <div class="card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-                <i class="fas fa-file-pdf fa-4x" style="color: #ef4444; margin-bottom: 15px;"></i>
-                <a href="india-urban-food-index-april26.pdf.pdf" target="_blank" class="btn-primary">Open Research Report</a>
-            </div>
+    <section id="nlp-engine" class="isolated-project" style="background: #f8fafc;">
+        <h1>NLP Sentiment Engine</h1>
+        <div class="card">
+            <h3>The Build:</h3>
+            <p>Python pipeline using TF-IDF to score 100+ daily financial headlines.</p>
+            <p><strong>Result:</strong> Generated BUY/SELL signals for simulated portfolios.</p>
         </div>
     </section>
 
-    <section id="fintech" class="portfolio-page-section">
-        <span class="tag">InvestTech</span>
-        <h1 style="font-size: 3rem; margin-bottom: 10px;">NLP Sentiment Analysis</h1>
-        <p style="color: var(--text-dim); font-size: 1.2rem;">AI-driven signal generation for equity research desks.</p>
-
-        <div class="project-details">
-            <div class="card">
-                <h3>Project Scope</h3>
-                <p style="color: var(--text-dim);">Processes 100+ daily headlines to score market sentiment using Python (TF-IDF + Classification).</p>
-            </div>
-            <div class="card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-                <i class="fab fa-python fa-4x" style="color: #3776ab; margin-bottom: 15px;"></i>
-                <a href="https://github.com/FinanceJourneyPriyansh" target="_blank" class="btn-secondary">Explore GitHub Repository</a>
-            </div>
+    <section id="eaglewood" class="isolated-project">
+        <h1>Eaglewood India Food Index</h1>
+        <div class="card">
+            <h3>The Build:</h3>
+            <p>Proprietary index tracking price volatility across 21 Indian cities.</p>
+            <a href="india-urban-food-index-april26.pdf.pdf" target="_blank" class="btn-primary">View Full Report</a>
         </div>
     </section>
 
-    <section id="banking" class="portfolio-page-section">
-        <span class="tag">Strategy Case Study</span>
-        <h1 style="font-size: 3rem; margin-bottom: 10px;">Everyday Banking vs Strategy</h1>
-        <p style="color: var(--text-dim); font-size: 1.2rem;">A comparative analysis of banking operations and corporate finance.</p>
-
-        <div class="card" style="margin-top: 20px; display: flex; justify-content: space-between; align-items: center;">
-            <div>
-                <h3>Key Deliverable</h3>
-                <p style="color: var(--text-dim);">Strategic deck covering retail liquidity vs. investment banking deal structures.</p>
-            </div>
-            <a href="Everyday%20Banking%20vs%20Big%20Picture%20Finance.pdf" target="_blank" class="btn-primary">View Full Case Study</a>
+    <section id="banking-case" class="isolated-project" style="background: #f8fafc;">
+        <h1>Banking Structure Case Study</h1>
+        <div class="card">
+            <p>Strategic analysis of retail banking operations vs corporate finance models.</p>
+            <a href="Everyday%20Banking%20vs%20Big%20Picture%20Finance.pdf" target="_blank" class="btn-primary">Open Case Study</a>
         </div>
     </section>
-
-    <footer style="padding: 60px 10%; text-align: center; background: #0f172a; color: white;">
-        <p>&copy; 2026 Priyansh Soni | Finance Portfolio Portfolio</p>
-    </footer>
 
 </body>
 </html>
