@@ -290,3 +290,60 @@ footer a{
   color:#bbb;
   font-size:14px;
 }
+
+.experience-card{
+  background:#111;
+  border:1px solid #222;
+  border-radius:20px;
+  padding:30px;
+  margin-top:30px;
+}
+
+.experience-head{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-bottom:15px;
+}
+
+.experience-head h3{
+  font-size:28px;
+  margin-bottom:8px;
+}
+
+.experience-head h4{
+  color:#aaa;
+  font-size:18px;
+  font-weight:400;
+}
+
+.experience-head span{
+  color:#777;
+  font-size:15px;
+}
+
+.experience-card p{
+  color:#d4d4d4;
+  line-height:1.8;
+}
+
+details{
+  margin-top:18px;
+}
+
+summary{
+  cursor:pointer;
+  color:white;
+  font-weight:600;
+  margin-bottom:15px;
+}
+
+.experience-details{
+  margin-top:15px;
+}
+
+.experience-details p{
+  margin-bottom:15px;
+  color:#bdbdbd;
+}
