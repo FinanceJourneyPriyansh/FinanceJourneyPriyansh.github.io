@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priyansh Soni | Finance Portfolio</title>
+    <title>Priyansh Soni | Finance & IB Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </head>
@@ -14,72 +14,83 @@
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#experience">Experience</a>
-            <a href="#tata-section">Valuation</a>
-            <a href="#eaglewood-section">Macro Research</a>
-            <a href="#nlp-section">FinTech</a>
+            <a href="#projects-menu">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="expertise.html">Certifications</a>
             <a href="contact.html">Contact</a>
         </div>
     </nav>
 
-    <section id="home">
+    <section id="home" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center;">
         <div class="hero-content">
             <h1>Investment Banking Analyst <br> & CA Finalist</h1>
-            <p>Specializing in 3-Statement Financial Modeling, Macro-Economic Research, and Statutory Audit.</p>
-            <div class="cta-buttons">
-                <a href="#tata-section" class="btn-primary">View Case Studies</a>
-                <a href="Priyansh_Soni_Finance_CV.pdf" target="_blank" class="btn-secondary">Download CV</a>
+            <p>Bridging the gap between Statutory Audit and Financial Modeling.</p>
+            <a href="Priyansh_Soni_Finance_CV.pdf" target="_blank" class="btn-primary">Download Full CV</a>
+        </div>
+    </section>
+
+    <section id="experience" style="padding: 100px 10%; border-top: 1px solid #eee;">
+        <span class="tag">Professional Background</span>
+        <h2>Work Experience</h2>
+        <div class="timeline" style="margin-top: 40px;">
+            <div class="card">
+                <h3>Investment Banking Analyst (Active Role)</h3>
+                <p><strong>Zetheta Algorithms</strong> | 2025 - Present</p>
+                <p>Building NLP pipelines for sentiment scoring and systematic signal generation.</p>
+            </div>
+            <div class="card">
+                <h3>CA Article Assistant (Articleship)</h3>
+                <p><strong>Shrimal Bansal & Co.</strong> | 2019 - 2022</p>
+                <p>Led PSU bank audits (SBI, BoI) for portfolios under ₹1500 Cr.</p>
+            </div>
+            <div class="card">
+                <h3>Equity Research (Internship)</h3>
+                <p><strong>Finsckool</strong> | 2025</p>
+                <p>End-to-end valuation of Tata Motors and integrated 3-statement modeling.</p>
             </div>
         </div>
     </section>
 
-    <section id="tata-section" style="border-bottom: 1px solid var(--border);">
-        <span class="tag">Equity Research</span>
-        <h2>Tata Motors DCF Valuation</h2>
-        <div class="card" style="margin-top: 20px; border-left: 5px solid #38bdf8;">
-            <p>Integrated 3-statement model with segment-level revenue assumptions across JLR and domestic business. Valued using DCF and EV/EBITDA comps.</p>
-            <div style="margin-top: 20px;">
-                <a href="portfolio.html#valuation" class="btn-primary">Explore Valuation Work</a>
-            </div>
+    <div id="projects-menu">
+        <section style="padding: 100px 10%; background: #f8fafc;">
+            <span class="tag">01. Equity Research</span>
+            <h2 style="font-size: 2.5rem;">Tata Motors Valuation</h2>
+            <p>Integrated DCF model with segment-level JLR analysis.</p>
+            <a href="portfolio.html#tata-motors" class="btn-secondary">Explore Tata Project Only</a>
+        </section>
+
+        <section style="padding: 100px 10%;">
+            <span class="tag">02. InvestTech</span>
+            <h2 style="font-size: 2.5rem;">NLP Sentiment Engine</h2>
+            <p>Python tool for financial news sentiment attribution.</p>
+            <a href="portfolio.html#nlp-engine" class="btn-secondary">Explore NLP Project Only</a>
+        </section>
+
+        <section style="padding: 100px 10%; background: #f8fafc;">
+            <span class="tag">03. Macro Analysis</span>
+            <h2 style="font-size: 2.5rem;">Eaglewood Food Index</h2>
+            <p>Analysis of inflation and global supply chain risks.</p>
+            <a href="portfolio.html#eaglewood" class="btn-secondary">Explore Eaglewood Project Only</a>
+        </section>
+
+        <section style="padding: 100px 10%;">
+            <span class="tag">04. Strategy</span>
+            <h2 style="font-size: 2.5rem;">Banking & Finance Case Study</h2>
+            <p>Strategic comparison of retail vs. corporate banking structures.</p>
+            <a href="portfolio.html#banking-case" class="btn-secondary">Explore Case Study Only</a>
+        </section>
+    </div>
+
+    <section id="blog" style="padding: 100px 10%; background: #0f172a; color: white;">
+        <span class="tag">Latest Insights</span>
+        <h2>Blog & Publications</h2>
+        <div class="card" style="background: rgba(255,255,255,0.05); margin-top: 20px;">
+            <p><strong>Posted: April 23, 2026</strong></p>
+            <h3>India Urban Food Index: Heat & Hormuz Risks</h3>
+            <p>An analysis of how West Asia disruptions are impacting domestic urea costs.</p>
+            <a href="india-urban-food-index-april26.pdf.pdf" target="_blank" style="color: #38bdf8;">Read PDF Post →</a>
         </div>
     </section>
-
-    <section id="eaglewood-section" style="background: rgba(56, 189, 248, 0.02); border-bottom: 1px solid var(--border);">
-        <span class="tag">Featured Research</span>
-        <h2>Eaglewood India Urban Food Index</h2>
-        <div class="card" style="margin-top: 20px; border-left: 5px solid #38bdf8;">
-            <p>Fortnightly analysis of urban inflation and supply-side "Trifecta" risks. Connecting global geopolitical events to domestic food price volatility.</p>
-            <div style="margin-top: 20px;">
-                <a href="india-urban-food-index-april26.pdf.pdf" target="_blank" class="btn-primary">View April 23 Report</a>
-                <a href="portfolio.html#research" class="btn-secondary" style="margin-left: 10px;">Research Methodology</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="nlp-section" style="border-bottom: 1px solid var(--border);">
-        <span class="tag">InvestTech</span>
-        <h2>NLP Sentiment Engine</h2>
-        <div class="card" style="margin-top: 20px; border-left: 5px solid #38bdf8;">
-            <p>Python-based pipeline processing news headlines to generate systematic signals for simulated portfolios using sentiment attribution logic.</p>
-            <div style="margin-top: 20px;">
-                <a href="portfolio.html#fintech" class="btn-primary">View Project Technicals</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="banking-section">
-        <span class="tag">Strategy Analysis</span>
-        <h2>Banking Structure Case Study</h2>
-        <div class="card" style="margin-top: 20px; border-left: 5px solid #38bdf8;">
-            <p>A strategic comparison of retail banking operations versus high-level corporate finance and investment banking structures.</p>
-            <div style="margin-top: 20px;">
-                <a href="Everyday%20Banking%20vs%20Big%20Picture%20Finance.pdf" target="_blank" class="btn-primary">Open Case Study PDF</a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Priyansh Soni | Finance Portfolio</p>
-    </footer>
 
 </body>
 </html>
