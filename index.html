@@ -29,57 +29,64 @@
         </div>
     </section>
 
-    <section id="experience" style="padding: 100px 10%; border-top: 1px solid #eee;">
-        <span class="tag">Professional Background</span>
-        <h2>Work Experience</h2>
-        <div class="timeline" style="margin-top: 40px;">
-            <div class="card">
-                <h3>Investment Banking Analyst (Active Role)</h3>
-                <p><strong>Zetheta Algorithms</strong> | 2025 - Present</p>
-                <p>Building NLP pipelines for sentiment scoring and systematic signal generation.</p>
-            </div>
-            <div class="card">
-                <h3>CA Article Assistant (Articleship)</h3>
-                <p><strong>Shrimal Bansal & Co.</strong> | 2019 - 2022</p>
-                <p>Led PSU bank audits (SBI, BoI) for portfolios under ₹1500 Cr.</p>
-            </div>
-            <div class="card">
-                <h3>Equity Research (Internship)</h3>
-                <p><strong>Finsckool</strong> | 2025</p>
-                <p>End-to-end valuation of Tata Motors and integrated 3-statement modeling.</p>
+    <section id="experience" style="padding: 100px 10%;">
+    <span class="tag">Professional Background</span>
+    <h2>Work Experience</h2>
+    <p style="margin-bottom: 20px; font-style: italic;">(Click an experience to see details)</p>
+    
+    <div class="timeline">
+        <div class="card exp-item" onclick="this.classList.toggle('active')">
+            <h3>Investment Banking Analyst <i class="fas fa-chevron-down" style="float:right; font-size: 0.8rem;"></i></h3>
+            <p><strong>Zetheta Algorithms</strong> | 2025 - Present</p>
+            <div class="exp-details">
+                <ul>
+                    <li>Built NLP pipelines using Python to score sentiment on 100+ daily articles.</li>
+                    <li>Developed Streamlit dashboards for real-time portfolio tracking.</li>
+                    <li>Conducted systematic backtesting to evaluate strategy robustness.</li>
+                </ul>
             </div>
         </div>
-    </section>
 
-    <div id="projects-menu">
-        <section style="padding: 100px 10%; background: #f8fafc;">
-            <span class="tag">01. Equity Research</span>
-            <h2 style="font-size: 2.5rem;">Tata Motors Valuation</h2>
-            <p>Integrated DCF model with segment-level JLR analysis.</p>
-            <a href="portfolio.html#tata-motors" class="btn-secondary">Explore Tata Project Only</a>
-        </section>
-
-        <section style="padding: 100px 10%;">
-            <span class="tag">02. InvestTech</span>
-            <h2 style="font-size: 2.5rem;">NLP Sentiment Engine</h2>
-            <p>Python tool for financial news sentiment attribution.</p>
-            <a href="portfolio.html#nlp-engine" class="btn-secondary">Explore NLP Project Only</a>
-        </section>
-
-        <section style="padding: 100px 10%; background: #f8fafc;">
-            <span class="tag">03. Macro Analysis</span>
-            <h2 style="font-size: 2.5rem;">Eaglewood Food Index</h2>
-            <p>Analysis of inflation and global supply chain risks.</p>
-            <a href="portfolio.html#eaglewood" class="btn-secondary">Explore Eaglewood Project Only</a>
-        </section>
-
-        <section style="padding: 100px 10%;">
-            <span class="tag">04. Strategy</span>
-            <h2 style="font-size: 2.5rem;">Banking & Finance Case Study</h2>
-            <p>Strategic comparison of retail vs. corporate banking structures.</p>
-            <a href="portfolio.html#banking-case" class="btn-secondary">Explore Case Study Only</a>
-        </section>
+        <div class="card exp-item" onclick="this.classList.toggle('active')">
+            <h3>CA Article Assistant <i class="fas fa-chevron-down" style="float:right; font-size: 0.8rem;"></i></h3>
+            <p><strong>Shrimal Bansal & Co.</strong> | 2019 - 2022</p>
+            <div class="exp-details">
+                <ul>
+                    <li>Led statutory audits for PSU banks (SBI, Union Bank, BoI).</li>
+                    <li>Scrutinized loan books and NPA classifications for portfolios up to ₹1500 Cr.</li>
+                    <li>Reported 10+ audit observations regarding internal control weaknesses.</li>
+                </ul>
+            </div>
+        </div>
     </div>
+</section>
+
+<section id="projects-menu" style="padding: 100px 10%; background: #f8fafc;">
+    <span class="tag">Portfolio</span>
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+        <div class="card">
+            <span class="tag">Equity Research</span>
+            <h3>Tata Motors Valuation</h3>
+            <p>Integrated DCF model with segment-level JLR analysis.</p>
+            <a href="portfolio.html#tata-motors" class="btn-secondary">Explore Work</a>
+        </div>
+
+        <div class="card">
+            <span class="tag">InvestTech</span>
+            <h3>NLP Sentiment Engine</h3>
+            <p>Python tool for financial news sentiment attribution.</p>
+            <a href="portfolio.html#nlp-engine" class="btn-secondary">Explore Work</a>
+        </div>
+
+        <div class="card">
+            <span class="tag">Macro Analysis</span>
+            <h3>Eaglewood Food Index</h3>
+            <p>Analysis of inflation and global supply chain risks.</p>
+            <a href="portfolio.html#eaglewood" class="btn-secondary">Explore Work</a>
+        </div>
+    </div>
+</section>
 
     <section id="blog" style="padding: 100px 10%; background: #0f172a; color: white;">
         <span class="tag">Latest Insights</span>
