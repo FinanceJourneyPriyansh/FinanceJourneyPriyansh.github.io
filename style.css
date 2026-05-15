@@ -69,13 +69,14 @@ nav {
 
 /* --- Section Spacing: The Overlap Fix --- */
 section {
-    padding: 100px 10% 80px; /* Top padding clears the fixed nav */
+    /* Increase this from 100px to 140px to ensure clearance */
+    padding: 140px 10% 80px; 
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* This ensures headers aren't cut off when clicking nav links */
-    scroll-margin-top: var(--nav-height); 
+    /* This stops the header from hiding when you click a nav link */
+    scroll-margin-top: 80px; 
 }
 
 #home {
