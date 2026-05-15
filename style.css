@@ -184,3 +184,31 @@ footer {
     border-top: 1px solid var(--border);
     color: var(--text-dim);
 }
+/* Projects Grid Fix */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+/* Experience Interactivity */
+.exp-item {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+.exp-item:hover {
+    border-left-color: #38bdf8;
+    background: rgba(56, 189, 248, 0.05);
+}
+.exp-details {
+    display: none; /* Hidden by default */
+    padding-top: 15px;
+    color: #64748b;
+    border-top: 1px inset #eee;
+    margin-top: 10px;
+}
+.exp-item.active .exp-details {
+    display: block; /* Shows when active */
+}
