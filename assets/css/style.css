@@ -229,7 +229,9 @@ footer a{
   font-size:18px;
 }
 
-/* EXPERIENCE SECTION */
+/* =========================
+   EXPERIENCE SECTION
+========================= */
 
 .experience-card{
   background:#111;
@@ -241,8 +243,10 @@ footer a{
 }
 
 .experience-card:hover{
-  border-color:#444;
+  border-color:#3a3a3a;
 }
+
+/* TOP AREA */
 
 .experience-top{
   display:flex;
@@ -269,72 +273,87 @@ footer a{
   font-size:15px;
 }
 
+/* SHORT DESCRIPTION */
+
 .experience-card p{
   color:#d5d5d5;
   line-height:1.9;
 }
 
-/* DROPDOWN DETAILS */
+/* =========================
+   DROPDOWN
+========================= */
 
 details{
-  margin-top:20px;
+  margin-top:24px;
   border-top:1px solid #222;
   padding-top:18px;
 }
 
+details[open]{
+  padding-bottom:18px;
+}
+
 summary{
   cursor:pointer;
-  color:white;
+  color:#ffffff;
   font-weight:600;
-  transition:0.3s;
   list-style:none;
+  transition:0.3s ease;
 }
 
 summary:hover{
-  color:#aaa;
+  color:#bdbdbd;
 }
+
+/* REMOVE DEFAULT ARROW */
 
 summary::-webkit-details-marker{
   display:none;
 }
 
+/* CUSTOM + ICON */
+
 summary::after{
   content:"+";
   float:right;
   font-size:22px;
-  transition:0.3s;
+  line-height:1;
+  transition:0.3s ease;
 }
 
 details[open] summary::after{
   content:"−";
 }
 
+/* =========================
+   EXPANDED CONTENT
+========================= */
+
 .experience-details{
-  margin-top:22px;
-  margin-bottom:40px;
+  margin-top:25px;
 }
 
 .experience-details p{
-  margin-bottom:30px;
   color:#bdbdbd;
+  margin-bottom:22px;
+  line-height:1.9;
 }
 
-/* TAGS */
+/* =========================
+   SKILLS / TAGS
+========================= */
 
 .experience-tags{
-  margin-top:25px;
-  display:flex;
-  flex-direction:column;
-  gap:12px;
+  margin-top:28px;
 }
 
 .experience-tags span{
-  color:#bcbcbc;
+  display:block;
+  margin-bottom:14px;
+  color:#c4c4c4;
   font-size:15px;
-  border-left:2px solid #444;
   padding-left:14px;
-}
-
-details[open]{
-  padding-bottom:20px;
+  border-left:2px solid #444;
+  line-height:1.7;
 }
