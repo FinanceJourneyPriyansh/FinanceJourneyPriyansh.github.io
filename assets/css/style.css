@@ -291,9 +291,14 @@ details{
 }
 
 details[open]{
-  padding-bottom:18px;
+  display:block;
+  padding-bottom:35px;
 }
 
+ .experience-card{
+  margin-bottom:40px;
+} 
+  
 summary{
   cursor:pointer;
   color:#ffffff;
