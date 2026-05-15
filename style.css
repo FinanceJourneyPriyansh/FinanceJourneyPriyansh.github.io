@@ -223,3 +223,32 @@ footer a{
   }
 
 }
+.stats{
+  display:flex;
+  gap:25px;
+  margin-top:50px;
+  flex-wrap:wrap;
+}
+
+.stat-box{
+  background:#161616;
+  border:1px solid #2a2a2a;
+  padding:25px;
+  border-radius:18px;
+  min-width:180px;
+}
+
+.stat-box h3{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.stat-box p{
+  color:#aaa;
+}
+
+.vision{
+  margin-top:30px;
+  color:#888;
+  font-size:18px;
+}
