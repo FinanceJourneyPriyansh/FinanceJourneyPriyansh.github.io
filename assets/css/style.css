@@ -346,11 +346,14 @@ details[open] summary::after{
 
 .experience-tags{
   margin-top:28px;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:14px;
 }
 
 .experience-tags span{
   display:block;
-  margin-bottom:14px;
+  width:100%;
   color:#c4c4c4;
   font-size:15px;
   padding-left:14px;
