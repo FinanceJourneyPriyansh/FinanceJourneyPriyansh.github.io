@@ -17,7 +17,14 @@ nav{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:30px 8%;
+  padding:20px 8%;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1000;
+  background:rgba(0,0,0,0.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid #222;
 }
 
 nav h2{
@@ -33,6 +40,11 @@ nav ul{
 nav a{
   color:white;
   text-decoration:none;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#999;
 }
 
 .hero{
@@ -42,7 +54,7 @@ nav a{
 
 .hero-content{
   max-width:800px;
-  padding:100px 8%;
+  padding:180px 8% 100px;
 }
 
 .tag{
