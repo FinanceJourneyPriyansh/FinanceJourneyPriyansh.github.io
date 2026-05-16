@@ -142,6 +142,11 @@ nav a:hover{
   margin-bottom:50px;
 }
 
+#projects h2{
+  font-size:64px;
+  margin-bottom:80px;
+}
+
 .section p{
   max-width:950px;
   margin-bottom:20px;
