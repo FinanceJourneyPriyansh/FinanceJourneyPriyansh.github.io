@@ -13,7 +13,7 @@ html{
 }
 
 body{
-  font-family:Arial, sans-serif;
+  font-family:Arial,sans-serif;
   background:#0b0b0b;
   color:white;
   line-height:1.7;
@@ -130,7 +130,7 @@ nav a:hover{
 }
 
 /* =========================
-   GENERAL SECTIONS
+   GENERAL SECTION
 ========================= */
 
 .section{
@@ -140,8 +140,8 @@ nav a:hover{
 .section h2{
   font-size:48px;
   margin-bottom:50px;
+  line-height:1.2;
 }
-
 
 .section p{
   max-width:950px;
@@ -160,15 +160,15 @@ nav a:hover{
 }
 
 /* =========================
-   CARDS
+   GENERIC CARD
 ========================= */
 
 .card{
   background:#161616;
   border:1px solid #2c2c2c;
   padding:30px;
-  margin-bottom:30px;
   border-radius:22px;
+  margin-bottom:30px;
 }
 
 .company{
@@ -177,21 +177,179 @@ nav a:hover{
 }
 
 /* =========================
-   PROJECTS
+   EXPERIENCE SECTION
 ========================= */
+
+#experience{
+  max-width:1250px;
+  margin:auto;
+}
+
+.experience-card{
+  background:#161616;
+  border:1px solid #2c2c2c;
+  border-radius:24px;
+  padding:35px;
+  margin-bottom:35px;
+  transition:0.3s ease;
+}
+
+.experience-card:hover{
+  border-color:#444;
+  transform:translateY(-3px);
+}
+
+.experience-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-bottom:18px;
+}
+
+.experience-top h3{
+  font-size:30px;
+  margin-bottom:8px;
+  line-height:1.3;
+}
+
+.experience-top h4{
+  color:#a5a5a5;
+  font-size:18px;
+  font-weight:400;
+  line-height:1.5;
+}
+
+.experience-date{
+  color:#777;
+  font-size:15px;
+  white-space:nowrap;
+}
+
+.experience-card p{
+  color:#d4d4d4;
+  line-height:1.9;
+}
+
+.experience-short{
+  margin-top:12px;
+}
+
+details{
+  margin-top:25px;
+}
+
+summary{
+  list-style:none;
+  cursor:pointer;
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  border:1px solid #333;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-left:auto;
+  background:#111;
+  transition:0.3s ease;
+}
+
+summary:hover{
+  border-color:#666;
+  background:#1c1c1c;
+}
+
+summary::-webkit-details-marker{
+  display:none;
+}
+
+summary::after{
+  content:"+";
+  color:white;
+  font-size:24px;
+  line-height:1;
+}
+
+details[open] summary::after{
+  content:"−";
+}
+
+.experience-details{
+  margin-top:28px;
+  padding-top:10px;
+}
+
+.experience-details p{
+  margin-bottom:22px;
+  color:#bdbdbd;
+  line-height:1.9;
+}
+
+.experience-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:28px;
+  list-style:none;
+}
+
+.experience-tags li{
+  background:#1f1f1f;
+  border:1px solid #333;
+  padding:10px 16px;
+  border-radius:30px;
+  font-size:14px;
+  color:#d7d7d7;
+  transition:0.3s ease;
+}
+
+.experience-tags li:hover{
+  border-color:#666;
+  transform:translateY(-2px);
+}
+
+/* =========================
+   PROJECT SECTION
+========================= */
+
+#projects{
+  max-width:1350px;
+  margin:auto;
+}
+
+#projects h2{
+  font-size:48px;
+  margin-bottom:55px;
+  line-height:1.2;
+}
+
+.project-category{
+  margin-bottom:80px;
+}
+
+.category-title{
+  font-size:30px;
+  color:#f1f1f1;
+  margin-bottom:35px;
+  padding-bottom:16px;
+  border-bottom:1px solid #252525;
+  line-height:1.3;
+}
 
 .project-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
+  gap:28px;
 }
 
 .project-card{
   background:#161616;
   border:1px solid #2c2c2c;
-  padding:30px;
-  border-radius:22px;
+  border-radius:24px;
+  padding:32px;
   transition:0.3s ease;
+  min-height:100%;
 }
 
 .project-card:hover{
@@ -200,13 +358,24 @@ nav a:hover{
 }
 
 .project-card h3{
-  margin-bottom:15px;
+  font-size:22px;
+  line-height:1.5;
+  margin-bottom:18px;
+  color:white;
+}
+
+.project-card p{
+  color:#cfcfcf;
+  line-height:1.9;
+  margin-bottom:25px;
+  font-size:16px;
 }
 
 .project-card span{
-  display:inline-block;
-  margin-top:20px;
-  color:#999;
+  display:block;
+  color:#8f8f8f;
+  line-height:1.8;
+  font-size:14px;
 }
 
 /* =========================
@@ -230,139 +399,6 @@ nav a:hover{
 
 .skills-grid div:hover{
   border-color:#444;
-  transform:translateY(-2px);
-}
-
-/* =========================
-   EXPERIENCE SECTION
-========================= */
-
-#experience{
-  max-width:1200px;
-  margin:auto;
-}
-
-.experience-card{
-  background:#161616;
-  border:1px solid #2b2b2b;
-  border-radius:24px;
-  padding:35px;
-  margin-bottom:35px;
-  transition:0.3s ease;
-  overflow:hidden;
-}
-
-.experience-card:hover{
-  border-color:#444;
-  transform:translateY(-3px);
-}
-
-.experience-top{
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
-  gap:20px;
-  flex-wrap:wrap;
-  margin-bottom:18px;
-}
-
-.experience-top h3{
-  font-size:30px;
-  margin-bottom:8px;
-}
-
-.experience-top h4{
-  color:#a5a5a5;
-  font-size:18px;
-  font-weight:400;
-}
-
-.experience-date{
-  color:#777;
-  font-size:15px;
-  white-space:nowrap;
-}
-
-.experience-short{
-  color:#d4d4d4;
-  line-height:1.9;
-  margin-top:10px;
-}
-
-/* DETAILS */
-
-details{
-  margin-top:24px;
-}
-
-summary{
-  list-style:none;
-  cursor:pointer;
-  width:42px;
-  height:42px;
-  border-radius:50%;
-  border:1px solid #333;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin-left:auto;
-  transition:0.3s ease;
-  background:#111;
-}
-
-summary:hover{
-  border-color:#666;
-  background:#1d1d1d;
-}
-
-summary::-webkit-details-marker{
-  display:none;
-}
-
-summary::after{
-  content:"+";
-  color:white;
-  font-size:24px;
-}
-
-details[open] summary::after{
-  content:"−";
-}
-
-.experience-details{
-  margin-top:28px;
-  padding-top:10px;
-}
-
-.experience-details p{
-  color:#bdbdbd;
-  line-height:1.9;
-  margin-bottom:24px;
-}
-
-/* TAGS */
-
-.experience-tags{
-  display:flex;
-  flex-wrap:wrap;
-  gap:14px;
-  margin-top:30px;
-  list-style:none;
-  padding:0;
-}
-
-.experience-tags li{
-  background:#1f1f1f;
-  border:1px solid #333;
-  padding:10px 16px;
-  border-radius:30px;
-  font-size:14px;
-  color:#d7d7d7;
-  transition:0.3s ease;
-}
-
-.experience-tags li:hover{
-  border-color:#666;
   transform:translateY(-2px);
 }
 
@@ -407,7 +443,15 @@ footer a{
   }
 
   .section h2{
-    font-size:40px;
+    font-size:42px;
+  }
+
+  #projects h2{
+    font-size:42px;
+  }
+
+  .category-title{
+    font-size:26px;
   }
 
 }
@@ -442,7 +486,7 @@ footer a{
   }
 
   .section h2{
-    font-size:34px;
+    font-size:36px;
   }
 
   .experience-card{
@@ -459,6 +503,14 @@ footer a{
 
   .experience-top h4{
     font-size:16px;
+  }
+
+  .project-card{
+    padding:24px;
+  }
+
+  .project-card h3{
+    font-size:20px;
   }
 
 }
@@ -487,134 +539,12 @@ footer a{
     font-size:24px;
   }
 
-/* =========================
-   PROJECT SECTION
-========================= */
-
-/* MAIN PROJECT HEADING */
-
-#projects h2{
-  font-size:42px;
-  margin-bottom:45px;
-  line-height:1.2;
-}
-
-/* CATEGORY WRAPPER */
-
-.project-category{
-  margin-bottom:70px;
-}
-
-/* CATEGORY HEADINGS */
-
-.category-title{
-  font-size:28px;
-  color:#f1f1f1;
-  margin-top:40px;
-  margin-bottom:28px;
-  padding-bottom:14px;
-  border-bottom:1px solid #252525;
-  line-height:1.3;
-}
-
-.project-category:first-child .category-title{
-  margin-top:0;
-}
-
-/* PROJECT GRID */
-
-.project-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:28px;
-  margin-top:20px;
-}
-
-/* PROJECT CARDS */
-
-.project-card{
-  background:#161616;
-  border:1px solid #2c2c2c;
-  border-radius:22px;
-  padding:30px;
-  transition:0.3s ease;
-}
-
-.project-card:hover{
-  border-color:#444;
-  transform:translateY(-3px);
-}
-
-/* CARD TITLE */
-
-.project-card h3{
-  font-size:22px;
-  line-height:1.5;
-  margin-bottom:18px;
-  color:white;
-}
-
-/* DESCRIPTION */
-
-.project-card p{
-  color:#cfcfcf;
-  line-height:1.9;
-  margin-bottom:25px;
-  font-size:16px;
-}
-
-/* TAGS */
-
-.project-card span{
-  display:block;
-  color:#8f8f8f;
-  line-height:1.8;
-  font-size:14px;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media(max-width:992px){
-
   #projects h2{
-    font-size:54px;
-  }
-
-}
-
-@media(max-width:768px){
-
-  #projects h2{
-    font-size:42px;
-    margin-bottom:65px;
+    font-size:34px;
   }
 
   .category-title{
     font-size:24px;
-    margin-top:65px;
-    margin-bottom:35px;
-  }
-
-  .project-grid{
-    gap:22px;
-  }
-
-  .project-card{
-    padding:24px;
-  }
-
-  .project-card h3{
-    font-size:20px;
-  }
-
-}
-
-@media(max-width:480px){
-
-  #projects h2{
-    font-size:36px;
   }
 
   .project-card{
