@@ -1,1 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tesla Financial Model | Priyansh Soni</title>
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/project-page.css">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <h2>Priyansh Soni</h2>
+
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#experience">Experience</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+
+  </nav>
+
+
+  <!-- PROJECT PAGE -->
+
+  <section class="section dark">
+
+    <div class="project-page">
+
+  <p class="tag">
+    Startup Finance • Financial Modelling • Valuation
+  </p>
+
+  <h1 class="project-main-title">
+    Healthcare IoT Financial Model
+  </h1>
+
+  <p class="project-intro">
+
+    Built an integrated financial model and valuation framework for an IoT-enabled cattle healthcare startup analysing recurring subscription economics, device scalability, operating leverage, and long-term cash flow generation.
+
+  </p>
+
+
+  <!-- PROJECT OVERVIEW -->
+
+  <div class="project-section">
+
+    <h2>Project Overview</h2>
+
+    <p>
+
+      Developed a fully integrated 3-statement financial model for a healthcare IoT business providing cattle health monitoring solutions through connected devices and cloud-based subscription services.
+
+    </p>
+
+    <p>
+
+      The model projected monthly financial performance over a 24-month forecast period, incorporating device installations, subscription revenue growth, operating expenses, working capital assumptions, and valuation analysis using DCF, multiple-based, and cost-based approaches.
+
+    </p>
+
+  </div>
+
+
+  <!-- BUSINESS MODEL -->
+
+  <div class="project-section">
+
+    <h2>Business & Revenue Model</h2>
+
+    <p>
+
+      The company operates a hybrid revenue structure combining one-time device installation revenue with recurring subscription-based monitoring income, creating predictable long-duration cash flows.
+
+    </p>
+
+    <p>
+
+      Device installation revenue was modelled at ₹3,200 per device with an initial deployment of 100 devices growing at 10% month-over-month under a compounded expansion framework. :contentReference[oaicite:0]{index=0}
+
+    </p>
+
+    <p>
+
+      Subscription revenue was projected at ₹200 per device per month, while cloud servicing costs were estimated at ₹50 per device, enabling analysis of recurring gross margin scalability. :contentReference[oaicite:1]{index=1}
+
+    </p>
+
+  </div>
+
+
+  <!-- KEY FINDINGS -->
+
+  <div class="project-section">
+
+    <h2>Key Findings & Insights</h2>
+
+    <ul class="project-list">
+
+      <li>
+        Device installations scaled from 100 units initially to ~895 units by the end of the forecast horizon under 10% monthly compounded growth assumptions. :contentReference[oaicite:2]{index=2}
+      </li>
+
+      <li>
+        Subscription-driven recurring revenue increased steadily from ₹20,000 per month to ~₹1.79 lakh per month, improving revenue visibility and predictability. :contentReference[oaicite:3]{index=3}
+      </li>
+
+      <li>
+        DCF valuation estimated enterprise value at approximately ₹4.46 crore based on projected long-term free cash flow generation. :contentReference[oaicite:4]{index=4}
+      </li>
+
+      <li>
+        Analysis highlighted the importance of recurring subscription retention and operational scalability in driving long-term intrinsic valuation.
+      </li>
+
+      <li>
+        Working capital analysis showed that delayed receivable collection cycles could create short-term liquidity pressure despite strong long-term revenue growth potential. :contentReference[oaicite:5]{index=5}
+      </li>
+
+    </ul>
+
+  </div>
+
+
+  <!-- FINANCIAL MODELLING -->
+
+  <div class="project-section">
+
+    <h2>Financial Modeling Methodology</h2>
+
+    <ul class="project-list">
+
+      <li>Built integrated Income Statement, Balance Sheet, and Cash Flow projections</li>
+
+      <li>Created monthly device deployment and subscription forecasting schedules</li>
+
+      <li>Forecasted recurring revenue, cloud servicing costs, and operating expenses</li>
+
+      <li>Modelled working capital assumptions using receivable and payable cycles</li>
+
+      <li>Developed depreciation schedules and capex assumptions for business scaling</li>
+
+      <li>Performed DCF, multiple-based, and cost-based valuation analysis</li>
+
+      <li>Calculated enterprise valuation range under varying growth assumptions</li>
+
+    </ul>
+
+  </div>
+
+
+  <!-- VALUATION -->
+
+  <div class="project-section">
+
+    <h2>Valuation Analysis</h2>
+
+    <p>
+
+      DCF valuation estimated enterprise value at ~₹4.46 crore using a 15% discount rate and 4% terminal growth assumption. :contentReference[oaicite:6]{index=6}
+
+    </p>
+
+    <p>
+
+      Multiple-based valuation highlighted the sensitivity of early-stage startup valuation to profitability assumptions, while cost-based valuation established a conservative downside asset benchmark. :contentReference[oaicite:7]{index=7}
+
+    </p>
+
+    <p>
+
+      The valuation exercise demonstrated how recurring SaaS-style subscription revenue models can create substantial intrinsic value despite initially negative EBITDA margins.
+
+    </p>
+
+  </div>
+
+
+  <!-- KEY ASSUMPTIONS -->
+
+  <div class="project-section">
+
+    <h2>Key Assumptions</h2>
+
+    <ul class="project-list">
+
+      <li>10% monthly device installation growth under compounded scaling assumptions</li>
+
+      <li>₹200 monthly subscription fee per active device</li>
+
+      <li>Cloud servicing cost of ₹50 per device per month</li>
+
+      <li>45-day receivable cycle and 61-day payable cycle assumptions</li>
+
+      <li>15% WACC and 4% terminal growth rate used for DCF valuation</li>
+
+      <li>Employee costs and operating expenses escalated annually based on projected business expansion</li>
+
+    </ul>
+
+  </div>
+
+
+  <!-- RISKS -->
+
+  <div class="project-section">
+
+    <h2>Risks & Strategic Considerations</h2>
+
+    <ul class="project-list">
+
+      <li>Customer retention risk impacting recurring subscription revenue sustainability</li>
+
+      <li>Operational dependency on device reliability and cloud infrastructure uptime</li>
+
+      <li>Cash flow pressure arising from delayed receivable realization</li>
+
+      <li>High upfront scaling costs potentially delaying operating profitability</li>
+
+      <li>Valuation sensitivity to terminal growth and long-duration cash flow assumptions</li>
+
+    </ul>
+
+  </div>
+
+
+  <!-- SKILLS -->
+
+  <div class="project-section">
+
+    <h2>Skills & Tools Used</h2>
+
+    <div class="project-skills">
+
+      <span>Financial Modelling</span>
+      <span>DCF Valuation</span>
+      <span>Startup Finance</span>
+      <span>Forecasting</span>
+      <span>Working Capital Analysis</span>
+      <span>Scenario Analysis</span>
+      <span>Excel</span>
+      <span>Business Valuation</span>
+      <span>SaaS Metrics</span>
+      <span>Cash Flow Modelling</span>
+
+    </div>
+
+  </div>
+
+
+  <!-- LEARNINGS -->
+
+  <div class="project-section">
+
+    <h2>Key Learnings</h2>
+
+    <p>
+
+      Strengthened practical understanding of startup financial modelling, recurring revenue economics, operational scalability analysis, and long-term valuation frameworks for early-stage technology-enabled businesses.
+
+    </p>
+
+    <p>
+
+      The project also improved analytical thinking regarding subscription-based business models, unit economics, and the relationship between scalability, working capital efficiency, and enterprise valuation.
+
+    </p>
+
+  </div>
+
+
+  <!-- BUTTONS -->
+
+  <div class="project-buttons">
+
+    <a href="../assets/pdfs/healthcare-iot-financial-model.pdf"
+       target="_blank"
+       class="btn-primary">
+
+       View Full Model
+
+    </a>
+
+    <a href="../index.html#projects"
+       class="btn-secondary">
+
+       Back to Projects
+
+    </a>
+
+  </div>
+
+</div>
