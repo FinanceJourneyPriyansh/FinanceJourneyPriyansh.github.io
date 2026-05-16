@@ -569,45 +569,68 @@ footer a{
   padding-top:80px;
 }
 
+/* MAIN TITLE */
+
 .project-page h1{
-  font-size:64px;
-  line-height:1.1;
-  margin-bottom:30px;
+  font-size:48px;
+  line-height:1.2;
+  margin-bottom:28px;
+  font-weight:700;
 }
 
+/* INTRO */
+
 .project-intro{
-  font-size:20px;
+  font-size:19px;
   color:#cfcfcf;
   line-height:1.9;
   margin-bottom:60px;
+  max-width:900px;
 }
+
+/* EACH SECTION */
 
 .project-section{
-  margin-bottom:70px;
+  margin-top:65px;
 }
 
+/* SECTION HEADINGS */
+
 .project-section h2{
-  font-size:34px;
+  font-size:36px;
   margin-bottom:24px;
+  line-height:1.3;
 }
+
+/* PARAGRAPHS */
 
 .project-section p{
   color:#c8c8c8;
   line-height:1.9;
   margin-bottom:22px;
+  font-size:17px;
 }
+
+/* LIST */
 
 .project-list{
   padding-left:24px;
   color:#d0d0d0;
   line-height:2;
+  margin-top:20px;
 }
+
+.project-list li{
+  margin-bottom:10px;
+}
+
+/* SKILLS */
 
 .project-skills{
   display:flex;
   flex-wrap:wrap;
   gap:14px;
-  margin-top:25px;
+  margin-top:30px;
 }
 
 .project-skills span{
@@ -616,11 +639,14 @@ footer a{
   padding:10px 18px;
   border-radius:30px;
   font-size:14px;
+  color:#d8d8d8;
 }
+
+/* BUTTONS */
 
 .project-buttons{
   display:flex;
-  gap:20px;
+  gap:18px;
   flex-wrap:wrap;
   margin-top:70px;
 }
@@ -630,33 +656,27 @@ footer a{
 @media(max-width:768px){
 
   .project-page h1{
-    font-size:42px;
+    font-size:40px;
+  }
+
+  .project-section h2{
+    font-size:30px;
   }
 
   .project-intro{
     font-size:18px;
   }
 
-  .project-section h2{
-    font-size:28px;
+}
+
+@media(max-width:480px){
+
+  .project-page h1{
+    font-size:34px;
   }
-   
-/* PROJECT BUTTON */
 
-.project-btn{
-  display:inline-block;
-  margin-top:25px;
-  padding:12px 20px;
-  border:1px solid #333;
-  border-radius:12px;
-  color:white;
-  text-decoration:none;
-  transition:0.3s ease;
-}
+  .project-section h2{
+    font-size:26px;
+  }
 
-.project-btn:hover{
-  background:white;
-  color:black;
-}
-   
 }
