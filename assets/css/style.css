@@ -1,4 +1,4 @@
-/* =========================
+   /* =========================
    GLOBAL
 ========================= */
 
@@ -454,45 +454,11 @@ footer a{
    RESPONSIVE
 ========================= */
 
-/* Preserve Desktop Layout Across Devices */
-
-html{
-  zoom:0.95;
-}
+/* DESKTOP STYLE ON ALL DEVICES */
 
 body{
-  min-width:1200px;
+  min-width:900px;
   overflow-x:auto;
-}
-
-/* LARGE TABLETS */
-
-@media(max-width:992px){
-
-  body{
-    min-width:1100px;
-  }
-
-}
-
-/* TABLETS */
-
-@media(max-width:768px){
-
-  body{
-    min-width:1050px;
-  }
-
-}
-
-/* MOBILE */
-
-@media(max-width:480px){
-
-  body{
-    min-width:1000px;
-  }
-
 }
 
 /* CONTACT LINKS */
