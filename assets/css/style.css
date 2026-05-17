@@ -454,129 +454,49 @@ footer a{
    RESPONSIVE
 ========================= */
 
+/* Preserve Desktop Layout Across Devices */
+
+html{
+  zoom:0.95;
+}
+
+body{
+  min-width:1200px;
+  overflow-x:auto;
+}
+
+/* LARGE TABLETS */
+
 @media(max-width:992px){
 
-  .hero h1{
-    font-size:58px;
-  }
-
-  .section h2{
-    font-size:42px;
-  }
-
-  #projects h2{
-    font-size:42px;
-  }
-
-  .category-title{
-    font-size:26px;
+  body{
+    min-width:1100px;
   }
 
 }
+
+/* TABLETS */
 
 @media(max-width:768px){
 
-  nav{
-    flex-direction:column;
-    gap:20px;
-  }
-
-  nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:18px;
-  }
-
-  .hero-content{
-    padding-top:220px;
-  }
-
-  .hero h1{
-    font-size:48px;
-  }
-
-  .hero-text{
-    font-size:18px;
-  }
-
-  .section{
-    padding:90px 7%;
-  }
-
-  .section h2{
-    font-size:36px;
-  }
-
-  .experience-card{
-    padding:25px;
-  }
-
-  .experience-top{
-    flex-direction:column;
-  }
-
-  .experience-top h3{
-    font-size:24px;
-  }
-
-  .experience-top h4{
-    font-size:16px;
-  }
-
-  .project-card{
-    padding:24px;
-  }
-
-  .project-card h3{
-    font-size:20px;
+  body{
+    min-width:1050px;
   }
 
 }
 
+/* MOBILE */
+
 @media(max-width:480px){
 
-  .hero h1{
-    font-size:40px;
+  body{
+    min-width:1000px;
   }
 
-  .hero-text{
-    font-size:17px;
-  }
+}
 
-  .buttons{
-    flex-direction:column;
-  }
+/* CONTACT LINKS */
 
-  .btn-primary,
-  .btn-secondary{
-    width:100%;
-    text-align:center;
-  }
-
-  nav h2{
-    font-size:24px;
-  }
-
-  #projects h2{
-    font-size:34px;
-  }
-
-  .category-title{
-    font-size:24px;
-  }
-
-  .project-card{
-    padding:22px;
-  }
-
-  .project-card h3{
-    font-size:18px;
-  }
-
-  .project-card p{
-    font-size:15px;
-  }
-   
 .contact-links{
   display:flex;
   flex-direction:column;
@@ -593,6 +513,4 @@ footer a{
 
 .contact-links a:hover{
   color:#9a9a9a;
-}
-   
 }
