@@ -740,32 +740,29 @@ capital intensity, and long-term valuation drivers.
 
 <script>
 
-function openPopup(src) {
+function openCertificate(src){
 
-    document.getElementById("certificatePopup").style.display = "flex";
+    const popup = document.getElementById("certificatePopup");
+    const image = document.getElementById("popupImage");
 
-    document.getElementById("popupImage").src = src;
+    popup.style.display = "flex";
+    image.src = src;
 
     document.body.style.overflow = "hidden";
-
 }
 
-function closeCertificate() {
+function closeCertificate(){
 
     document.getElementById("certificatePopup").style.display = "none";
 
     document.body.style.overflow = "auto";
-
 }
-
-/* Close when clicking outside image */
 
 document.getElementById("certificatePopup").addEventListener("click", function(e){
 
     if(e.target.id === "certificatePopup"){
 
         closeCertificate();
-
     }
 
 });
