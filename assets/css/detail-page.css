@@ -316,9 +316,9 @@ nav a:hover{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 
-    gap:30px;
+    gap:24px;
 
 }
 
@@ -352,7 +352,7 @@ nav a:hover{
 
     width:100%;
 
-    height:210px;
+    height:170px;
 
     object-fit:cover;
 
@@ -370,13 +370,13 @@ nav a:hover{
 
 .certificate-content{
 
-    padding:24px;
+    padding:18px;
 
 }
 
 .certificate-content h3{
 
-    font-size:20px;
+    font-size:17px;
 
     margin-bottom:14px;
 
@@ -388,7 +388,7 @@ nav a:hover{
 
     color:#cfcfcf;
 
-    font-size:15px;
+    font-size:13px;
 
     line-height:1.8;
 
