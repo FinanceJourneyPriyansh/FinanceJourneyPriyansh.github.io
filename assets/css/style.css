@@ -481,92 +481,243 @@ body{
   color:#9a9a9a;
 }
 
-/* Certifications */
+/* =========================
+   CERTIFICATIONS
+========================= */
 
-.project-card img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 15px;
-    transition: 0.3s ease;
+.project-card img{
+
+    width:100%;
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:14px;
+
+    margin-bottom:18px;
+
+    cursor:pointer;
+
+    transition:0.35s ease;
+
+    border:1px solid rgba(255,255,255,0.06);
+
 }
 
-.project-card img:hover {
-    transform: scale(1.02);
+.project-card img:hover{
+
+    transform:scale(1.02);
+
+    box-shadow:0 12px 28px rgba(0,0,0,0.35);
+
 }
 
-.certifications-more {
-    text-align: center;
-    margin-top: 40px;
+/* =========================
+   CERTIFICATION BUTTON
+========================= */
+
+.certifications-more{
+
+    text-align:center;
+
+    margin-top:55px;
+
 }
 
-.project-btn {
-    display: inline-block;
-    padding: 14px 28px;
-    border: 1px solid #ffffff30;
-    border-radius: 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    transition: 0.3s ease;
+.project-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:14px 32px;
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
+
+    font-size:15px;
+
+    letter-spacing:0.3px;
+
+    background:rgba(255,255,255,0.03);
+
+    backdrop-filter:blur(10px);
+
+    transition:0.35s ease;
+
 }
 
-.project-btn:hover {
-    background: white;
-    color: black;
+.project-btn:hover{
+
+    background:white;
+
+    color:#000;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(255,255,255,0.15);
+
 }
 
-/* ========================= */
-/* CERTIFICATE POPUP */
-/* ========================= */
+/* =========================
+   CERTIFICATE POPUP
+========================= */
 
 .certificate-popup{
+
     display:none;
+
     position:fixed;
+
     z-index:99999;
+
     left:0;
     top:0;
+
     width:100%;
     height:100%;
-    background:rgba(0,0,0,0.92);
+
+    background:rgba(0,0,0,0.94);
+
     justify-content:center;
     align-items:center;
+
     overflow:auto;
+
     padding:40px 20px;
+
+    backdrop-filter:blur(6px);
+
 }
 
 .popup-image{
-    max-width:90%;
-    max-height:90vh;
+
+    max-width:88%;
+
+    max-height:88vh;
+
     width:auto;
     height:auto;
-    border-radius:12px;
+
     object-fit:contain;
-    box-shadow:0 0 25px rgba(255,255,255,0.15);
+
+    border-radius:16px;
+
+    box-shadow:0 0 35px rgba(255,255,255,0.08);
+
     animation:popupZoom 0.25s ease;
+
 }
+
+/* =========================
+   POPUP ANIMATION
+========================= */
 
 @keyframes popupZoom{
+
     from{
-        transform:scale(0.9);
+
+        transform:scale(0.92);
+
         opacity:0;
+
     }
+
     to{
+
         transform:scale(1);
+
         opacity:1;
+
     }
+
 }
 
+/* =========================
+   CLOSE BUTTON
+========================= */
+
 .close-popup{
+
     position:fixed;
-    top:20px;
-    right:30px;
+
+    top:22px;
+    right:32px;
+
     color:#fff;
-    font-size:42px;
-    font-weight:bold;
+
+    font-size:44px;
+
+    font-weight:300;
+
     cursor:pointer;
+
     z-index:100000;
+
+    transition:0.25s ease;
+
 }
 
 .close-popup:hover{
+
     color:#00bcd4;
+
+    transform:rotate(90deg);
+
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .popup-image{
+
+        max-width:96%;
+
+        max-height:82vh;
+
+    }
+
+    .close-popup{
+
+        top:16px;
+
+        right:22px;
+
+        font-size:38px;
+
+    }
+
+    .project-card img{
+
+        height:200px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .project-btn{
+
+        width:100%;
+
+    }
+
+    .project-card img{
+
+        height:190px;
+
+    }
+
 }
