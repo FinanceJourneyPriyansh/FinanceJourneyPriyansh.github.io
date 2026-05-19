@@ -31,10 +31,12 @@ nav h2{
 
 nav ul{
   display:flex;
-  gap:30px;
+  gap:24px;
   list-style:none;
+  flex-wrap:wrap;
+  justify-content:flex-end;
 }
-
+   
 nav a{
   color:white;
   text-decoration:none;
@@ -197,7 +199,27 @@ nav a:hover{
   .project-intro{
     font-size:18px;
   }
+   
+nav{
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+}
 
+nav h2{
+  font-size:22px;
+  white-space:nowrap;
+}
+
+nav ul{
+  gap:14px;
+}
+
+nav a{
+  font-size:14px;
+}
+   
 }
 
 @media(max-width:480px){
