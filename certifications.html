@@ -1,1 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Certifications | Priyansh Soni</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+      padding:60px 8%;
+    }
+
+    .page-title{
+      text-align:center;
+      font-size:3rem;
+      margin-bottom:70px;
+      font-weight:700;
+    }
+
+    /* CATEGORY */
+
+    .category-section{
+      margin-bottom:90px;
+    }
+
+    .category-title{
+      font-size:2rem;
+      margin-bottom:35px;
+      padding-left:18px;
+      border-left:6px solid #00bcd4;
+      color:#ffffff;
+    }
+
+    /* GRID */
+
+    .certificate-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+      gap:35px;
+    }
+
+    /* CARD */
+
+    .certificate-card{
+      background:#111827;
+      border-radius:22px;
+      overflow:hidden;
+      transition:0.35s ease;
+      box-shadow:0 12px 30px rgba(0,0,0,0.35);
+    }
+
+    .certificate-card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 20px 40px rgba(0,0,0,0.45);
+    }
+
+    .certificate-card img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+      cursor:pointer;
+    }
+
+    .certificate-content{
+      padding:24px;
+    }
+
+    .certificate-content h3{
+      font-size:1.35rem;
+      margin-bottom:14px;
+      color:#ffffff;
+    }
+
+    .certificate-content p{
+      color:#cbd5e1;
+      line-height:1.7;
+      margin-bottom:18px;
+      font-size:0.96rem;
+    }
+
+    .tag{
+      display:inline-block;
+      padding:8px 16px;
+      border-radius:30px;
+      background:#00bcd4;
+      color:#000;
+      font-size:0.82rem;
+      font-weight:700;
+    }
+
+    /* POPUP */
+
+    .popup{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.9);
+      display:none;
+      justify-content:center;
+      align-items:center;
+      z-index:9999;
+      padding:30px;
+    }
+
+    .popup img{
+      max-width:95%;
+      max-height:95%;
+      border-radius:12px;
+      box-shadow:0 0 40px rgba(255,255,255,0.1);
+    }
+
+    .popup.active{
+      display:flex;
+    }
+
+    .close-popup{
+      position:absolute;
+      top:25px;
+      right:35px;
+      font-size:40px;
+      color:white;
+      cursor:pointer;
+    }
+
+    @media(max-width:768px){
+
+      body{
+        padding:40px 5%;
+      }
+
+      .page-title{
+        font-size:2.2rem;
+      }
+
+      .category-title{
+        font-size:1.5rem;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1 class="page-title">
+    Certifications & Learning Journey
+  </h1>
+
+  <!-- ================================= -->
+  <!-- ACCOUNTING & ADVISORY -->
+  <!-- ================================= -->
+
+  <div class="category-section">
+
+    <h2 class="category-title">
+      Accounting & Advisory
+    </h2>
+
+    <div class="certificate-grid">
+
+      <!-- EY FAAS -->
+
+      <div class="certificate-card">
+
+        <img src="assets/certificates/Accounting & Advisory/EY FAAS.jpg"
+             alt="EY FAAS"
+             onclick="openPopup(this.src)">
+
+        <div class="certificate-content">
+
+          <h3>
+            EY FAAS Job Simulation
+          </h3>
+
+          <p>
+            Completed Financial Accounting Advisory Services (FAAS)
+            simulation covering IPO readiness, sustainability reporting,
+            finance optimization, and technical accounting research.
+          </p>
+
+          <span class="tag">
+            EY • Forage
+          </span>
+
+        </div>
+
+      </div>
+
+      <!-- KPMG -->
+
+      <div class="certificate-card">
+
+        <img src="assets/certificates/Accounting & Advisory/KPMG US Career Catalyst.jpg"
+             alt="KPMG Audit"
+             onclick="openPopup(this.src)">
+
+        <div class="certificate-content">
+
+          <h3>
+            KPMG Career Catalyst Audit
+          </h3>
+
+          <p>
+            Gained practical exposure to audit planning,
+            receivable testing, walkthroughs, client communication,
+            and presentation of audit findings.
+          </p>
+
+          <span class="tag">
+            KPMG • Audit
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- POPUP -->
+
+  <div class="popup" id="popup">
+
+    <span class="close-popup" onclick="closePopup()">
+      &times;
+    </span>
+
+    <img id="popup-img" src="">
+
+  </div>
+
+  <!-- SCRIPT -->
+
+  <script>
+
+    function openPopup(src){
+      document.getElementById("popup").classList.add("active");
+      document.getElementById("popup-img").src = src;
+    }
+
+    function closePopup(){
+      document.getElementById("popup").classList.remove("active");
+    }
+
+  </script>
+
+</body>
+
+</html>
