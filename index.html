@@ -566,129 +566,172 @@ capital intensity, and long-term valuation drivers.
 
   <h2>Featured Certifications</h2>
 
+  <p class="section-subtitle">
+    A curated collection of certifications focused on Investment Banking,
+    Financial Modeling, Valuation, Excel, and Data Analytics.
+  </p>
+
   <div class="project-grid">
 
     <!-- 1 -->
     <div class="project-card">
+
       <img src="assets/certificates/featured/Bank Of America Investment Banking.jpg"
-           alt="Bank Of America Investment Banking">
+           alt="Bank Of America Investment Banking"
+           onclick="openCertificate(this.src)">
 
       <h3>Bank Of America Investment Banking</h3>
 
       <span>Investment Banking • Financial Modeling</span>
+
     </div>
 
     <!-- 2 -->
     <div class="project-card">
+
       <img src="assets/certificates/featured/Citi Investment Banking.jpg"
-           alt="Citi Investment Banking">
+           alt="Citi Investment Banking"
+           onclick="openCertificate(this.src)">
 
       <h3>Citi Investment Banking</h3>
 
-      <span>M&A • Valuation • Comps</span>
+      <span>M&A • Valuation • Comparable Analysis</span>
+
     </div>
 
     <!-- 3 -->
     <div class="project-card">
+
       <img src="assets/certificates/featured/Investment Banking.jpg"
-           alt="Investment Banking">
+           alt="Investment Banking"
+           onclick="openCertificate(this.src)">
 
       <h3>Investment Banking Learning Path</h3>
 
       <span>Corporate Finance • Deal Process</span>
+
     </div>
 
     <!-- 4 -->
     <div class="project-card">
+
       <img src="assets/certificates/featured/Merger & Acquisitions.jpg"
-           alt="Merger & Acquisitions">
+           alt="Merger & Acquisitions"
+           onclick="openCertificate(this.src)">
 
       <h3>Merger & Acquisitions</h3>
 
-      <span>M&A • Selling a Company</span>
+      <span>M&A • Selling a Company • Valuation</span>
+
     </div>
 
     <!-- 5 -->
     <div class="project-card">
+
       <img src="assets/certificates/featured/DCF Model.jpg"
-           alt="DCF Model">
+           alt="DCF Model"
+           onclick="openCertificate(this.src)">
 
       <h3>DCF Valuation Model</h3>
 
-      <span>Discounted Cash Flow • Valuation</span>
+      <span>Discounted Cash Flow • Equity Valuation</span>
+
     </div>
 
     <!-- 6 -->
     <div class="project-card">
+
       <img src="assets/certificates/featured/LBO Model.jpg"
-           alt="LBO Model">
+           alt="LBO Model"
+           onclick="openCertificate(this.src)">
 
       <h3>LBO Valuation Model</h3>
 
-      <span>Private Equity • LBO Modeling</span>
+      <span>Private Equity • Leveraged Buyouts</span>
+
     </div>
 
     <!-- 7 -->
     <div class="project-card">
+
       <img src="assets/certificates/featured/Project Finance.jpg"
-           alt="Project Finance">
+           alt="Project Finance"
+           onclick="openCertificate(this.src)">
 
       <h3>Project Finance & Excel</h3>
 
-      <span>Financial Modeling • Project Finance</span>
+      <span>Project Finance • Financial Modeling</span>
+
     </div>
 
     <!-- 8 -->
     <div class="project-card">
+
       <img src="assets/certificates/featured/Financial Modelling for Startups & Small Business.jpg"
-           alt="Financial Modelling for Startups & Small Business">
+           alt="Financial Modelling for Startups & Small Business"
+           onclick="openCertificate(this.src)">
 
       <h3>Financial Modelling for Startups</h3>
 
-      <span>Startup Finance • Forecasting</span>
+      <span>Startup Finance • Forecasting & Planning</span>
+
     </div>
 
     <!-- 9 -->
     <div class="project-card">
+
       <img src="assets/certificates/featured/Financial Modelling Workshop.jpg"
-           alt="Financial Modelling Workshop">
+           alt="Financial Modelling Workshop"
+           onclick="openCertificate(this.src)">
 
       <h3>Financial Modelling Workshop</h3>
 
-      <span>Excel • Modeling Basics</span>
+      <span>Excel • Modeling Fundamentals</span>
+
     </div>
 
     <!-- 10 -->
     <div class="project-card">
+
       <img src="assets/certificates/featured/Advanced Excel.jpg"
-           alt="Advanced Excel">
+           alt="Advanced Excel"
+           onclick="openCertificate(this.src)">
 
       <h3>Advanced Excel</h3>
 
       <span>Excel • Financial Calculations</span>
+
     </div>
 
     <!-- 11 -->
     <div class="project-card">
+
       <img src="assets/certificates/featured/Excel crash course -Master Excel for Financial Analysis CFI.jpg"
-           alt="Excel Crash Course">
+           alt="Excel Crash Course"
+           onclick="openCertificate(this.src)">
 
       <h3>Excel for Financial Analysis</h3>
 
-      <span>Excel • Financial Analysis</span>
+      <span>Financial Analysis • Advanced Excel</span>
+
     </div>
 
     <!-- 12 -->
     <div class="project-card">
+
       <img src="assets/certificates/featured/Quantium Data Analytics.jpg"
-           alt="Quantium Data Analytics">
+           alt="Quantium Data Analytics"
+           onclick="openCertificate(this.src)">
 
       <h3>Quantium Data Analytics</h3>
 
-      <span>Data Analytics • Business Insights</span>
+      <span>Data Analytics • Commercial Insights</span>
+
     </div>
 
   </div>
+
+  <!-- View More Button -->
 
   <div class="certifications-more">
 
@@ -700,6 +743,33 @@ capital intensity, and long-term valuation drivers.
 
 </section>
 
+<!-- Certificate Fullscreen Popup -->
+
+<div id="certificatePopup" class="certificate-popup">
+
+  <span class="close-popup" onclick="closeCertificate()">
+    &times;
+  </span>
+
+  <img id="popupImage" class="popup-image">
+
+</div>
+
+<!-- Popup Script -->
+
+<script>
+
+function openCertificate(src) {
+    document.getElementById("certificatePopup").style.display = "flex";
+    document.getElementById("popupImage").src = src;
+}
+
+function closeCertificate() {
+    document.getElementById("certificatePopup").style.display = "none";
+}
+
+</script>
+  
 <section id="blogs" class="section">
 
   <h2>Blogs & Insights</h2>
