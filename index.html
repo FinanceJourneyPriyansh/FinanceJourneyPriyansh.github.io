@@ -747,11 +747,11 @@ capital intensity, and long-term valuation drivers.
 
 <div id="certificatePopup" class="certificate-popup">
 
-  <span class="close-popup" onclick="closeCertificate()">
-    &times;
-  </span>
+    <span class="close-popup" onclick="closeCertificate()">
+        &times;
+    </span>
 
-  <img id="popupImage" class="popup-image">
+    <img id="popupImage" class="popup-image">
 
 </div>
 
@@ -759,14 +759,35 @@ capital intensity, and long-term valuation drivers.
 
 <script>
 
-function openCertificate(src) {
+function openPopup(src) {
+
     document.getElementById("certificatePopup").style.display = "flex";
+
     document.getElementById("popupImage").src = src;
+
+    document.body.style.overflow = "hidden";
+
 }
 
 function closeCertificate() {
+
     document.getElementById("certificatePopup").style.display = "none";
+
+    document.body.style.overflow = "auto";
+
 }
+
+/* Close when clicking outside image */
+
+document.getElementById("certificatePopup").addEventListener("click", function(e){
+
+    if(e.target.id === "certificatePopup"){
+
+        closeCertificate();
+
+    }
+
+});
 
 </script>
   
