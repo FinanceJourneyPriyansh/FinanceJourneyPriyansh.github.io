@@ -466,25 +466,3 @@ nav a:hover{
 }
 
 
-/* =================================
-   RESPONSIVE CERTIFICATE GRID
-================================= */
-
-@media(max-width:768px){
-
-    .certificate-grid{
-
-        grid-template-columns:
-        repeat(auto-fit,minmax(220px,1fr));
-
-        gap:18px;
-
-    }
-
-    .certificate-card img{
-
-        height:140px;
-
-    }
-
-}
