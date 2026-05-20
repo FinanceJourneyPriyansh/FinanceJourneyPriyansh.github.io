@@ -465,37 +465,6 @@ nav a:hover{
 
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media(max-width:768px){
-
-    .page-header{
-
-        padding-top:190px;
-
-    }
-
-    .page-header h1{
-
-        font-size:38px;
-
-    }
-
-    .category-title{
-
-        font-size:24px;
-
-    }
-
-    .certificate-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-}
 
 /* =================================
    RESPONSIVE CERTIFICATE GRID
