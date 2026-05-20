@@ -599,33 +599,3 @@ footer a{
     color:#00bcd4;
     transform:rotate(90deg);
 }
-
-
-/* =================================
-   RESPONSIVE GRID FIX
-================================= */
-
-@media(max-width:768px){
-
-    .project-grid{
-
-        grid-template-columns:
-        repeat(auto-fit,minmax(240px,1fr));
-
-        gap:18px;
-
-    }
-
-    .project-card{
-
-        padding:18px;
-
-    }
-
-    .project-card img{
-
-        height:150px;
-
-    }
-
-}
