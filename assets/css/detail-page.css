@@ -497,123 +497,24 @@ nav a:hover{
 
 }
 
-/* =========================================
-   RESPONSIVE DETAIL PAGES
-========================================= */
-
-@media(max-width:992px){
-
-    .certificate-grid{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
-}
+/* =================================
+   RESPONSIVE CERTIFICATE GRID
+================================= */
 
 @media(max-width:768px){
 
-    /* NAVBAR */
+    .certificate-grid{
 
-    nav{
-
-        padding:18px 5%;
-
-        flex-direction:column;
+        grid-template-columns:
+        repeat(auto-fit,minmax(220px,1fr));
 
         gap:18px;
 
     }
 
-    nav ul{
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-
-        gap:14px;
-
-    }
-
-    /* HEADER */
-
-    .page-header{
-
-        padding:150px 5% 50px;
-
-    }
-
-    .page-header h1{
-
-        font-size:38px;
-
-    }
-
-    .page-header p{
-
-        font-size:15px;
-
-    }
-
-    /* CATEGORY */
-
-    .category-section{
-
-        padding:0 5% 50px;
-
-    }
-
-    .category-title{
-
-        font-size:24px;
-
-    }
-
-    /* GRID */
-
-    .certificate-grid{
-
-        grid-template-columns:1fr;
-
-        gap:22px;
-
-    }
-
-    /* CARDS */
-
     .certificate-card img{
 
-        height:180px;
-
-    }
-
-    .certificate-content{
-
-        padding:18px;
-
-    }
-
-    .certificate-content h3{
-
-        font-size:17px;
-
-    }
-
-}
-
-/* ---------- SMALL PHONES ---------- */
-
-@media(max-width:480px){
-
-    .page-header h1{
-
-        font-size:30px;
-
-    }
-
-    .certificate-card img{
-
-        height:150px;
+        height:140px;
 
     }
 
