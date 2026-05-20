@@ -600,28 +600,6 @@ footer a{
     transform:rotate(90deg);
 }
 
-/* MOBILE */
-
-@media(max-width:768px){
-
-    .project-grid{
-        grid-template-columns:1fr;
-    }
-
-    .hero h1{
-        font-size:48px;
-    }
-
-    nav{
-        padding:18px 5%;
-    }
-
-    nav ul{
-        gap:16px;
-        flex-wrap:wrap;
-    }
-
-}
 
 /* =================================
    RESPONSIVE GRID FIX
