@@ -256,33 +256,26 @@ nav a:hover{
 
 .page-header{
 
-    padding:170px 8% 80px;
-
+    padding:150px 8% 55px;
     text-align:center;
 
 }
 
 .page-header h1{
 
-    font-size:58px;
-
-    margin-bottom:20px;
-
+    font-size:48px;
+    margin-bottom:16px;
     line-height:1.2;
 
 }
 
 .page-header p{
 
-    max-width:760px;
-
+    max-width:720px;
     margin:auto;
-
     color:#bdbdbd;
-
-    font-size:18px;
-
-    line-height:1.8;
+    font-size:16px;
+    line-height:1.7;
 
 }
 
@@ -292,19 +285,16 @@ nav a:hover{
 
 .category-section{
 
-    padding:0 8% 80px;
+    padding:0 8% 55px;
 
 }
 
 .category-title{
 
-    font-size:34px;
-
-    margin-bottom:35px;
-
-    padding-left:18px;
-
-    border-left:5px solid #ffffff;
+    font-size:28px;
+    margin-bottom:26px;
+    padding-left:14px;
+    border-left:4px solid #ffffff;
 
 }
 
@@ -316,9 +306,10 @@ nav a:hover{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
 
-    gap:30px;
+    gap:22px;
 
 }
 
@@ -332,7 +323,7 @@ nav a:hover{
 
     border:1px solid #2c2c2c;
 
-    border-radius:22px;
+    border-radius:20px;
 
     overflow:hidden;
 
@@ -342,7 +333,7 @@ nav a:hover{
 
 .certificate-card:hover{
 
-    transform:translateY(-4px);
+    transform:translateY(-3px);
 
     border-color:#444;
 
@@ -352,7 +343,7 @@ nav a:hover{
 
     width:100%;
 
-    height:220px;
+    height:150px;
 
     object-fit:cover;
 
@@ -370,17 +361,17 @@ nav a:hover{
 
 .certificate-content{
 
-    padding:22px;
+    padding:18px;
 
 }
 
 .certificate-content h3{
 
-    font-size:20px;
+    font-size:18px;
 
-    margin-bottom:14px;
+    margin-bottom:10px;
 
-    line-height:1.5;
+    line-height:1.4;
 
 }
 
@@ -390,9 +381,9 @@ nav a:hover{
 
     font-size:13px;
 
-    line-height:1.8;
+    line-height:1.7;
 
-    margin-bottom:18px;
+    margin-bottom:14px;
 
 }
 
@@ -400,7 +391,7 @@ nav a:hover{
 
     display:inline-block;
 
-    padding:8px 16px;
+    padding:7px 14px;
 
     border-radius:30px;
 
@@ -410,7 +401,9 @@ nav a:hover{
 
     color:#d7d7d7;
 
-    font-size:13px;
+    font-size:11px;
+
+    letter-spacing:1px;
 
 }
 
@@ -480,19 +473,19 @@ nav a:hover{
 
     .page-header{
 
-        padding-top:210px;
+        padding-top:190px;
 
     }
 
     .page-header h1{
 
-        font-size:42px;
+        font-size:38px;
 
     }
 
     .category-title{
 
-        font-size:28px;
+        font-size:24px;
 
     }
 
